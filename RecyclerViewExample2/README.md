@@ -14,4 +14,4 @@ View Pager2를 구현해보고, RV-VP2를 연동하는 예제.
 
 # Preview
 
-![](https://github.com/danggai/Kotlin-Android-Examples/blob/master/RecyclerViewExample/preview.gif?raw=true)
+![](https://github.com/danggai/Kotlin-Android-Examples/blob/master/RecyclerViewExample2/preview.gif?raw=true)
