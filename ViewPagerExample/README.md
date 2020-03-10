@@ -10,4 +10,4 @@ viewpager1 연습.
   - getImg에서 리소스 번호 확인 -> layout의 page_main.xml에 id="image"인 이미지 뷰에 ImageResource 할당.
 
 # Preview
-![](https://github.com/danggai/ViewPager_Example/blob/master/example.gif?raw=true)
+![](https://github.com/danggai/Kotlin-Android-Examples/blob/master/ViewPagerExample/example.gif?raw=true)
