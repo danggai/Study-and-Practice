@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:2:1-26:12
+ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:2:1-26:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\donggi9313\.gradle\caches\transforms-2\files-2.1\a8776343fdac874fa977e09d507079eb\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.2.0] C:\Users\donggi9313\.gradle\caches\transforms-2\files-2.1\9ee64b703de7c158c2438fbecadd08f5\jetified-core-ktx-1.2.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\donggi9313\.gradle\caches\transforms-2\files-2.1\d38c63deeca963c558fe516b1169310c\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
@@ -28,31 +28,31 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\donggi9313\.grad
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\donggi9313\.gradle\caches\transforms-2\files-2.1\2b76bbbf1f93cbf5dadfb1df63fad850\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\donggi9313\.gradle\caches\transforms-2\files-2.1\0214de92541da20a6f29d5a1d1caac7a\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\donggi9313\.gradle\caches\transforms-2\files-2.1\aab972487a8f59c32bc2363f2b46ffa6\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:2:1-26:12
 	package
-		ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:4:5-33
-		INJECTED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml
-		INJECTED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml
+		ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:4:5-33
+		INJECTED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml
+		INJECTED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml
-		ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:2:1-26:12
-		INJECTED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml
+		INJECTED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml
+		ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:2:1-26:12
+		INJECTED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml
 	xmlns:dist
-		ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:3:5-61
+		ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:3:5-61
 	android:versionCode
-		INJECTED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml
-		ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:2:1-26:12
-		INJECTED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml
+		INJECTED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml
+		ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:2:1-26:12
+		INJECTED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:2:11-69
 dist:module
-ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:6:5-40
+ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:6:5-40
 	dist:instant
-		ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:6:18-37
+		ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:6:18-37
 application
-ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:8:5-24:19
+ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:8:5-24:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\donggi9313\.gradle\caches\transforms-2\files-2.1\d38c63deeca963c558fe516b1169310c\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\donggi9313\.gradle\caches\transforms-2\files-2.1\d38c63deeca963c558fe516b1169310c\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.2.0] C:\Users\donggi9313\.gradle\caches\transforms-2\files-2.1\9075dbfaab39e40f8982b36dac1019b6\core-1.2.0\AndroidManifest.xml:24:5-89
@@ -62,43 +62,43 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\do
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.2.0] C:\Users\donggi9313\.gradle\caches\transforms-2\files-2.1\9075dbfaab39e40f8982b36dac1019b6\core-1.2.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:11:9-41
+		ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:12:9-54
+		ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:10:9-43
+		ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:9:9-35
+		ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:14:9-40
+		ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:14:9-40
 activity#com.example.rvtest.RVActivity
-ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:15:9-21:20
+ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:15:9-21:20
 	android:name
-		ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:15:19-45
+		ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:15:19-45
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:16:13-20:29
+ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:17:17-69
+ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:17:25-66
+		ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:19:17-77
+ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:19:27-74
+		ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:19:27-74
 activity#com.example.rvtest.VPActivity
-ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:22:9-47
+ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:22:9-47
 	android:name
-		ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:22:19-45
+		ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:22:19-45
 activity#com.example.rvtest.RVVPActivity
-ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:23:9-50
+ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:23:9-50
 	android:name
-		ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml:23:19-47
+		ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:23:19-47
 uses-sdk
-INJECTED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml
-INJECTED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml
+INJECTED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml
+INJECTED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\donggi9313\.gradle\caches\transforms-2\files-2.1\a8776343fdac874fa977e09d507079eb\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\donggi9313\.gradle\caches\transforms-2\files-2.1\a8776343fdac874fa977e09d507079eb\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core-ktx:1.2.0] C:\Users\donggi9313\.gradle\caches\transforms-2\files-2.1\9ee64b703de7c158c2438fbecadd08f5\jetified-core-ktx-1.2.0\AndroidManifest.xml:5:5-7:41
@@ -147,13 +147,13 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\donggi93
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\donggi9313\.gradle\caches\transforms-2\files-2.1\0214de92541da20a6f29d5a1d1caac7a\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\donggi9313\.gradle\caches\transforms-2\files-2.1\aab972487a8f59c32bc2363f2b46ffa6\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\donggi9313\.gradle\caches\transforms-2\files-2.1\aab972487a8f59c32bc2363f2b46ffa6\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-INJECTED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml
-INJECTED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml
+INJECTED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml
+INJECTED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml
-		ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml
-		INJECTED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml
+		INJECTED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml
+		ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml
+		INJECTED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml
-		ADDED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml
-		INJECTED from D:\donggi9313\Downloads\git\KotlinSample\rvtest\app\src\main\AndroidManifest.xml
+		INJECTED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml
+		ADDED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml
+		INJECTED from D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml
