@@ -1,59 +1,47 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    xmlns:dist="http://schemas.android.com/apk/distribution"
-4    package="com.example.rvtest"
-5    android:versionCode="1"
-6    android:versionName="1.0" >
-7
-8    <uses-sdk
-9        android:minSdkVersion="23"
-9-->D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml
-10        android:targetSdkVersion="29" />
-10-->D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml
-11
-12    <dist:module dist:instant="true" />
-12-->D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:6:5-40
-12-->D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:6:18-37
-13
-14    <application
-14-->D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:8:5-24:19
-15        android:allowBackup="true"
-15-->D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:9:9-35
-16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-16-->[androidx.core:core:1.2.0] C:\Users\donggi9313\.gradle\caches\transforms-2\files-2.1\9075dbfaab39e40f8982b36dac1019b6\core-1.2.0\AndroidManifest.xml:24:18-86
-17        android:debuggable="true"
-18        android:extractNativeLibs="false"
-19        android:icon="@mipmap/ic_launcher"
-19-->D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:10:9-43
-20        android:label="@string/app_name"
-20-->D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:11:9-41
-21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:12:9-54
-22        android:supportsRtl="true"
-22-->D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:13:9-35
-23        android:testOnly="true"
-24        android:theme="@style/AppTheme" >
-24-->D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:14:9-40
-25        <activity android:name="com.example.rvtest.RVActivity" >
-25-->D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:15:9-21:20
-25-->D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:15:19-45
-26            <intent-filter>
-26-->D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:16:13-20:29
-27                <action android:name="android.intent.action.MAIN" />
-27-->D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:17:17-69
-27-->D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:17:25-66
-28
-29                <category android:name="android.intent.category.LAUNCHER" />
-29-->D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:19:17-77
-29-->D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:19:27-74
-30            </intent-filter>
-31        </activity>
-32        <activity android:name="com.example.rvtest.VPActivity" />
-32-->D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:22:9-47
-32-->D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:22:19-45
-33        <activity android:name="com.example.rvtest.RVVPActivity" />
-33-->D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:23:9-50
-33-->D:\donggi9313\Downloads\git\KotlinSample\RecyclerViewExample\app\src\main\AndroidManifest.xml:23:19-47
-34    </application>
-35
-36</manifest>
+3    package="com.example.prograssbarexample"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->D:\donggi9313\Downloads\git\KotlinSample\PrograssBarExample\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\donggi9313\Downloads\git\KotlinSample\PrograssBarExample\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->D:\donggi9313\Downloads\git\KotlinSample\PrograssBarExample\app\src\main\AndroidManifest.xml:5:5-19:19
+12        android:allowBackup="true"
+12-->D:\donggi9313\Downloads\git\KotlinSample\PrograssBarExample\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.2.0] C:\Users\donggi9313\.gradle\caches\transforms-2\files-2.1\f8a25a8e7a6c14f5ca703a491b755ba2\core-1.2.0\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->D:\donggi9313\Downloads\git\KotlinSample\PrograssBarExample\app\src\main\AndroidManifest.xml:7:9-43
+16        android:label="@string/app_name"
+16-->D:\donggi9313\Downloads\git\KotlinSample\PrograssBarExample\app\src\main\AndroidManifest.xml:8:9-41
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->D:\donggi9313\Downloads\git\KotlinSample\PrograssBarExample\app\src\main\AndroidManifest.xml:9:9-54
+18        android:supportsRtl="true"
+18-->D:\donggi9313\Downloads\git\KotlinSample\PrograssBarExample\app\src\main\AndroidManifest.xml:10:9-35
+19        android:testOnly="true"
+20        android:theme="@style/AppTheme" >
+20-->D:\donggi9313\Downloads\git\KotlinSample\PrograssBarExample\app\src\main\AndroidManifest.xml:11:9-40
+21        <activity android:name="com.example.prograssbarexample.MainActivity" >
+21-->D:\donggi9313\Downloads\git\KotlinSample\PrograssBarExample\app\src\main\AndroidManifest.xml:12:9-18:20
+21-->D:\donggi9313\Downloads\git\KotlinSample\PrograssBarExample\app\src\main\AndroidManifest.xml:12:19-47
+22            <intent-filter>
+22-->D:\donggi9313\Downloads\git\KotlinSample\PrograssBarExample\app\src\main\AndroidManifest.xml:13:13-17:29
+23                <action android:name="android.intent.action.MAIN" />
+23-->D:\donggi9313\Downloads\git\KotlinSample\PrograssBarExample\app\src\main\AndroidManifest.xml:14:17-69
+23-->D:\donggi9313\Downloads\git\KotlinSample\PrograssBarExample\app\src\main\AndroidManifest.xml:14:25-66
+24
+25                <category android:name="android.intent.category.LAUNCHER" />
+25-->D:\donggi9313\Downloads\git\KotlinSample\PrograssBarExample\app\src\main\AndroidManifest.xml:16:17-77
+25-->D:\donggi9313\Downloads\git\KotlinSample\PrograssBarExample\app\src\main\AndroidManifest.xml:16:27-74
+26            </intent-filter>
+27        </activity>
+28    </application>
+29
+30</manifest>

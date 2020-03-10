@@ -1,4 +1,4 @@
-com.example.rvtest
+com.example.prograssbarexample
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -152,11 +152,6 @@ attr editTextStyle
 attr elevation
 attr emptyVisibility
 attr expandActivityOverflowButtonDrawable
-attr fastScrollEnabled
-attr fastScrollHorizontalThumbDrawable
-attr fastScrollHorizontalTrackDrawable
-attr fastScrollVerticalThumbDrawable
-attr fastScrollVerticalTrackDrawable
 attr firstBaselineToTopHeight
 attr font
 attr fontFamily
@@ -186,7 +181,6 @@ attr isLightTheme
 attr itemPadding
 attr lastBaselineToBottomHeight
 attr layout
-attr layoutManager
 attr layout_constrainedHeight
 attr layout_constrainedWidth
 attr layout_constraintBaseline_creator
@@ -283,8 +277,6 @@ attr radioButtonStyle
 attr ratingBarStyle
 attr ratingBarStyleIndicator
 attr ratingBarStyleSmall
-attr recyclerViewStyle
-attr reverseLayout
 attr searchHintIcon
 attr searchIcon
 attr searchViewStyle
@@ -296,13 +288,11 @@ attr showDividers
 attr showText
 attr showTitle
 attr singleChoiceItemLayout
-attr spanCount
 attr spinBars
 attr spinnerDropDownItemStyle
 attr spinnerStyle
 attr splitTrack
 attr srcCompat
-attr stackFromEnd
 attr state_above_anchor
 attr subMenuArrow
 attr submitBackground
@@ -545,9 +535,6 @@ dimen compat_notification_large_icon_max_height
 dimen compat_notification_large_icon_max_width
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
-dimen fastscroll_default_thickness
-dimen fastscroll_margin
-dimen fastscroll_minimum_range
 dimen highlight_alpha_material_colored
 dimen highlight_alpha_material_dark
 dimen highlight_alpha_material_light
@@ -555,9 +542,6 @@ dimen hint_alpha_material_dark
 dimen hint_alpha_material_light
 dimen hint_pressed_alpha_material_dark
 dimen hint_pressed_alpha_material_light
-dimen item_touch_helper_max_drag_scroll_per_frame
-dimen item_touch_helper_swipe_escape_max_velocity
-dimen item_touch_helper_swipe_escape_velocity
 dimen notification_action_icon_size
 dimen notification_action_text_size
 dimen notification_big_circle_margin
@@ -757,8 +741,9 @@ id barrier
 id beginning
 id blocking
 id bottom
-id btn_next
-id btn_prev
+id btn_de
+id btn_in
+id btn_set
 id buttonPanel
 id center_vertical
 id chains
@@ -793,22 +778,11 @@ id image
 id info
 id invisible
 id italic
-id item
-id item_genre
-id item_name
-id item_singer
-id item_thumbnail
-id item_title
-id item_touch_helper_previous_elevation
 id left
 id line1
 id line3
 id listMode
 id list_item
-id menu
-id menu_btn_init
-id menu_btn_section
-id menu_btn_song
 id message
 id middle
 id multiply
@@ -830,8 +804,6 @@ id radio
 id right
 id right_icon
 id right_side
-id rv
-id rvvp
 id screen
 id scrollIndicatorDown
 id scrollIndicatorUp
@@ -885,10 +857,6 @@ id unchecked
 id uniform
 id up
 id useLogo
-id vp1
-id vp2
-id vp3
-id vpLayout
 id withText
 id wrap
 id wrap_content
@@ -932,16 +900,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_rv
-layout activity_rv_item
-layout activity_rv_section
-layout activity_rvvp
-layout activity_rvvp_pager
-layout activity_rvvp_pager_item
-layout activity_rvvp_section
-layout activity_vp
-layout activity_vp_item
-layout activity_vp_section
+layout activity_main
 layout custom_dialog
 layout notification_action
 layout notification_action_tombstone
@@ -1371,7 +1330,6 @@ styleable MenuView android_windowAnimationStyle android_itemTextAppearance andro
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor
 styleable PopupWindowBackgroundState state_above_anchor
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
-styleable RecyclerView android_orientation android_clipToPadding android_descendantFocusability fastScrollEnabled fastScrollHorizontalThumbDrawable fastScrollHorizontalTrackDrawable fastScrollVerticalThumbDrawable fastScrollVerticalTrackDrawable layoutManager reverseLayout spanCount stackFromEnd
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon
 styleable Spinner android_entries android_popupBackground android_prompt android_dropDownWidth popupTheme
 styleable StateListDrawable android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
@@ -1381,5 +1339,4 @@ styleable TextAppearance android_textSize android_typeface android_textStyle and
 styleable Toolbar android_gravity android_minHeight buttonGravity collapseContentDescription collapseIcon contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation logo logoDescription maxButtonHeight menu navigationContentDescription navigationIcon popupTheme subtitle subtitleTextAppearance subtitleTextColor title titleMargin titleMarginBottom titleMarginEnd titleMarginStart titleMarginTop titleMargins titleTextAppearance titleTextColor
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
-styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
