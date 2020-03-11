@@ -1,0 +1,2 @@
+rootProject.name='CustomAdapter Example'
+include ':app'
