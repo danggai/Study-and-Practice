@@ -4,10 +4,4 @@
     <item
         android:id="@+id/delete"
         android:title="delete" />
-    <item
-        android:id="@+id/dummy1"
-        android:title="dummy1" />
-    <item
-        android:id="@+id/dummy2"
-        android:title="dummy2" />
 </menu>

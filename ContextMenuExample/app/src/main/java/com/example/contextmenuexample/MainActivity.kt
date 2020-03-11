@@ -53,15 +53,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onContextItemSelected(item: MenuItem): Boolean {
-        val info = item.menuInfo as AdapterContextMenuInfo
 
         when(item.itemId) {
             R.id.delete -> {
 //                listView.removeView(item)
                 Toast.makeText(applicationContext, "delete clicked.", Toast.LENGTH_SHORT).show()
             }
-            R.id.dummy1 -> Toast.makeText(applicationContext, "dummy do nothing.", Toast.LENGTH_SHORT).show()
-            R.id.dummy2 -> Toast.makeText(applicationContext, "dummy do nothing too.", Toast.LENGTH_SHORT).show()
+//            R.id.dummy1 -> Toast.makeText(applicationContext, "dummy do nothing.", Toast.LENGTH_SHORT).show()
+//            R.id.dummy2 -> Toast.makeText(applicationContext, "dummy do nothing too.", Toast.LENGTH_SHORT).show()
+            Menu.FIRST + 99 -> Toast.makeText(applicationContext, "you founded hidden menu!.", Toast.LENGTH_SHORT).show()
         }
         return super.onContextItemSelected(item)
     }
