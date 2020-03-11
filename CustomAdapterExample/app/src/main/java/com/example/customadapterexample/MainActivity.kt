@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             val image1: ImageView? = view?.findViewById(R.id.image1)
-            val imageResource = parent!!.context.getResources().getIdentifier(imgsrc[position], "drawable", parent.context.getPackageName());
+            val imageResource = parent!!.context.getResources().getIdentifier(imgsrc[position], "drawable", parent.context.getPackageName())
             val text1: TextView? = view?.findViewById(R.id.text1)
             val btn1: Button? = view?.findViewById(R.id.btn1)
             val btn2: Button? = view?.findViewById(R.id.btn2)
