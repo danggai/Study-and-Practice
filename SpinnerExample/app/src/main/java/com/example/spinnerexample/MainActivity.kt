@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             val imageResource = parent!!.context.getResources().getIdentifier(imgsrc[position], "drawable", parent.context.getPackageName())
             txtView.text = name[position]
             imgView.setImageResource(imageResource)
-            txtView.visibility = android.view.View.GONE
+            txtView.visibility = View.GONE
         }
 
 
