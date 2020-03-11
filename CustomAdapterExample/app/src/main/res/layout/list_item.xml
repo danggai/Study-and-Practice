@@ -2,33 +2,40 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="50dp"
+    android:layout_height="100dp"
+    android:paddingVertical="7dp"
     android:weightSum="5">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="80dp"
+        android:maxWidth="100dp"
+        android:layout_height="match_parent" />
+
 
     <TextView
         android:id="@+id/text1"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="3"
-        android:text="TEXT VIEW"
-        android:paddingStart="15dp"
         android:gravity="center_vertical"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="TEXT VIEW"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:visibility="visible" />
 
     <Button
         android:id="@+id/btn1"
-        android:text="btn1"
+        android:text="HALF"
         android:layout_weight="1"
         android:layout_width="0dp"
-        android:layout_height="match_parent"/>
+        android:layout_height="60dp"/>
 
     <Button
         android:id="@+id/btn2"
-        android:text="btn2"
+        android:text="FULL"
         android:layout_weight="1"
         android:layout_width="0dp"
-        android:layout_height="match_parent"/>
+        android:layout_height="60dp"/>
 
 
 </LinearLayout>
