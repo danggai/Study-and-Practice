@@ -11,14 +11,14 @@
         android:id="@+id/txtView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1"
-        />
+        android:text="검색 할까 말까한 query는 여기에"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
     <TextView
         android:id="@+id/txtView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2"
-        />
+        android:text="검색 요청 한 query는 여기에"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
 </LinearLayout>
