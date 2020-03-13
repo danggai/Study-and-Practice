@@ -47,13 +47,11 @@ class MainActivity : AppCompatActivity() {
             builder.setMessage("DESCRIPTION")
             builder.setIcon(R.mipmap.ic_launcher_round)
 
-            val listener = object:DialogInterface.OnClickListener{
-                override fun onClick(dialog: DialogInterface?, which: Int) {
-                    when(which) {
-                        DialogInterface.BUTTON_POSITIVE -> Toast.makeText(applicationContext, "Positive", Toast.LENGTH_SHORT).show()
-                        DialogInterface.BUTTON_NEGATIVE -> Toast.makeText(applicationContext, "Negative", Toast.LENGTH_SHORT).show()
-                        DialogInterface.BUTTON_NEUTRAL -> Toast.makeText(applicationContext, "Neutral", Toast.LENGTH_SHORT).show()
-                    }
+            val listener = DialogInterface.OnClickListener { dialog, which ->
+                when(which) {
+                    DialogInterface.BUTTON_POSITIVE -> Toast.makeText(applicationContext, "Positive", Toast.LENGTH_SHORT).show()
+                    DialogInterface.BUTTON_NEGATIVE -> Toast.makeText(applicationContext, "Negative", Toast.LENGTH_SHORT).show()
+                    DialogInterface.BUTTON_NEUTRAL -> Toast.makeText(applicationContext, "Neutral", Toast.LENGTH_SHORT).show()
                 }
             }
 
@@ -63,6 +61,7 @@ class MainActivity : AppCompatActivity() {
 
             builder.show()
         }
+
 
         btn_customDialog.setOnClickListener {
             val builder = AlertDialog.Builder(this)
@@ -100,6 +99,7 @@ class MainActivity : AppCompatActivity() {
             picker.show()
         }
 
+
         btn_timePicker.setOnClickListener {
             val calendar = Calendar.getInstance()
             val hour = calendar.get(Calendar.HOUR)
@@ -113,6 +113,7 @@ class MainActivity : AppCompatActivity() {
             picker.show()
         }
 
+
         btn_progressDialog.setOnClickListener {
             pro = ProgressDialog.show(this, "TITLE", "MESSAGE")     // 사용자가 임의로 종료 불가능. 코드로 반드시 종료해야 함.
 
@@ -123,6 +124,7 @@ class MainActivity : AppCompatActivity() {
 
             handler.postDelayed(thread, 2000)   // 2초 후 thread 실행
         }
+
 
         btn_listDialog.setOnClickListener {
             val builder = AlertDialog.Builder(this)
@@ -135,6 +137,7 @@ class MainActivity : AppCompatActivity() {
             builder.setItems(alcohol.toTypedArray(), listener)
             builder.show()
         }
+
 
         btn_customListDialog.setOnClickListener {
             val builder = AlertDialog.Builder(this)
