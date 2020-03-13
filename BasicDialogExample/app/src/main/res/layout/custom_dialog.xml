@@ -3,15 +3,20 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingVertical="20dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="60dp"
     android:orientation="vertical">
 
     <EditText
         android:id="@+id/txtEdit1"
+        android:hint="ID"
         android:layout_width="match_parent"
         android:layout_height="50dp" />
 
     <EditText
         android:id="@+id/txtEdit2"
+        android:hint="PASSWORD"
         android:layout_width="match_parent"
         android:layout_height="50dp" />
 

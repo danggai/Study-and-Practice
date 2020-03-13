@@ -7,31 +7,53 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/txtView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="txtxtxtxttxt"
-        />
+<!--    <TextView-->
+<!--        android:id="@+id/txtView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="TEXTEXTEXTEXTEXTEXTEXTEXTEXTEXT"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Large" />-->
 
     <Button
         android:id="@+id/btn_normalDialog"
         android:text="normal dialog"
+        android:layout_marginVertical="5dp"
         android:layout_width="match_parent"
         android:layout_height="50dp" />
     <Button
         android:id="@+id/btn_customDialog"
         android:text="custom dialog"
+        android:layout_marginVertical="5dp"
         android:layout_width="match_parent"
         android:layout_height="50dp" />
     <Button
         android:id="@+id/btn_datePicker"
         android:text="date picker dialog"
+        android:layout_marginVertical="5dp"
         android:layout_width="match_parent"
         android:layout_height="50dp" />
     <Button
         android:id="@+id/btn_timePicker"
         android:text="time picker dialog"
+        android:layout_marginVertical="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/btn_progressDialog"
+        android:text="progress dialog"
+        android:layout_marginVertical="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/btn_listDialog"
+        android:text="basic list dialog"
+        android:layout_marginVertical="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/btn_customListDialog"
+        android:text="custom list dialog"
+        android:layout_marginVertical="5dp"
         android:layout_width="match_parent"
         android:layout_height="50dp" />
 
