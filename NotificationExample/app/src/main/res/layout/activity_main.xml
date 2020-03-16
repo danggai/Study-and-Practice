@@ -25,6 +25,24 @@
         android:layout_height="wrap_content"
         android:text="ch2/ noti3" />
 
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ch3/ pending 1" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ch3/ pending 2" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ch3/ pending 3" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
