@@ -1,12 +1,12 @@
 # Thread Example
 
-°£´ÜÇÑ ºñµ¿±âÀû Ã³¸®¸¦ À§ÇÑ thread¸¦ Á÷Á¢ ±¸ÇöÇØº¸°í ÀÌÇØÇÏ±â À§ÇÑ ¿¹Á¦.
+ê°„ë‹¨í•œ ë¹„ë™ê¸°ì  ì²˜ë¦¬ë¥¼ ìœ„í•œ threadë¥¼ ì§ì ‘ êµ¬í˜„í•´ë³´ê³  ì´í•´í•˜ê¸° ìœ„í•œ ì˜ˆì œ.
 
-# Áß¿ä ÇĞ½À ³»¿ë
+# ì¤‘ìš” í•™ìŠµ ë‚´ìš©
 
-Android 8.0 ÀÌÀü ¹öÀü¿¡¼­´Â °³¹ßÀÚ°¡ ¸¸µç thread¿¡¼­ È­¸é¿¡ °ü·ÃµÈ Ã³¸® ½Ã exception ¹ß»ı.
-  - runOnUiThread( Runnable{ ... } ) ¸¦ ÅëÇØ UIThread·Î ÀÛ¾÷À» ÀÎ°èÇÔ.
+Android 8.0 ì´ì „ ë²„ì „ì—ì„œëŠ” ê°œë°œìê°€ ë§Œë“  threadì—ì„œ í™”ë©´ì— ê´€ë ¨ëœ ì²˜ë¦¬ ì‹œ exception ë°œìƒ.
+  - runOnUiThread( Runnable{ ... } ) ë¥¼ í†µí•´ UIThreadë¡œ ì‘ì—…ì„ ì¸ê³„í•¨.
 
 # Preview
 
-![](https://github.com/danggai/Kotlin-Android-Examples/blob/master/ThreadExample/example.gif?raw=true)
+![](https://github.com/danggai/Kotlin-Android-Examples/blob/master/ThreadExample/preview.gif?raw=true)
