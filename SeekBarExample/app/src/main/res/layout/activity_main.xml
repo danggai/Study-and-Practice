@@ -19,7 +19,7 @@
         />
     <SeekBar
         android:id="@+id/seekBar1"
-        style="@style/Widget.AppCompat.SeekBar"
+        style="@style/Widget.AppCompat.SeekBar"asdqwezxcasdqwe
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/txtView1"
@@ -71,7 +71,5 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtView3"
         />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

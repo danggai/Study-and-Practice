@@ -37,3 +37,9 @@
 14. [Notification](https://github.com/danggai/Kotlin-Android-Examples/tree/master/NotificationExample)
 
 15. [Style Notification](https://github.com/danggai/Kotlin-Android-Examples/tree/master/StyleNotificationExample)
+
+
+# 코틀린 기반 안드로이드 앱 개발 2단계
+- 수강 기간: 2020-03-17 ~ 
+
+1. [Basic Thread](https://github.com/danggai/Kotlin-Android-Examples/tree/master/ThreadExample)
