@@ -11,4 +11,4 @@
 
 # Preview
 
-![](https://github.com/danggai/Kotlin-Android-Examples/blob/master/ThreadExample/preview.gif?raw=true)
+![](https://github.com/danggai/Kotlin-Android-Examples/blob/master/PermissionExample/preview.gif?raw=true)
