@@ -16,10 +16,12 @@ class MainActivity : AppCompatActivity() {
         btn1.setOnClickListener { view ->
             var time = System.currentTimeMillis()
             txtView1.text= "현재 시각: $time"
+            var sync = AsyncTaskClass()
+            sync.execute(10, 20)
         }
 
-        var sync = AsyncTaskClass()
-        sync.execute(10, 20)
+//        var sync = AsyncTaskClass()
+//        sync.execute(10, 20)
     }
 
     inner class AsyncTaskClass: AsyncTask<Int, Long, String>() {
@@ -32,8 +34,8 @@ class MainActivity : AppCompatActivity() {
             var a1 = params[0]!!
             var a2 = params[1]!!
 
-            for (idx in 0..29) {
-                SystemClock.sleep(100)
+            for (idx in 0..20) {
+                SystemClock.sleep(50)
                 a1++
                 a2++
                 Log.d("async", "$a1, $a2")
