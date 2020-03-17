@@ -45,3 +45,8 @@
 1. [Basic Permission](https://github.com/danggai/Kotlin-Android-Examples/tree/master/PermissionExample)
 
 2. [Basic Thread](https://github.com/danggai/Kotlin-Android-Examples/tree/master/ThreadExample)
+
+3. [Handler](https://github.com/danggai/Kotlin-Android-Examples/tree/master/HandlerExample)
+
+4. [Async Task](https://github.com/danggai/Kotlin-Android-Examples/tree/master/AsyncTaskExample)
+
