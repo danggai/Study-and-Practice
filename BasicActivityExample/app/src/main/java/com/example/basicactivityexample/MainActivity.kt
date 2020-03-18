@@ -4,7 +4,6 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -39,12 +38,22 @@ class MainActivity : AppCompatActivity() {
             startActivityForResult(intent, 205)
         }
 
+        btn5.setOnClickListener { view ->
+            var t1 = TestClass()
+            t1.data10 = 100
+            t1.data20 = "안뇽 나는 메인문자열"
+
+            var intent = Intent(this, SixthActivity::class.java)
+
+            intent.putExtra("test1", t1)
+
+            startActivityForResult(intent, 206)
+        }
+
         btn99.setOnClickListener { view ->
             finish()
         }
     }
-
-//    override fun onP
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {       // startActivityForResult에서만 발생함.
         super.onActivityResult(requestCode, resultCode, data)
@@ -58,6 +67,13 @@ class MainActivity : AppCompatActivity() {
                 val value3 = data?.getBooleanExtra("value3", false)
                 val value4 = data?.getStringExtra("value4")
                 txtView1.text = "${value1} / ${value2} / ${value3} / ${value4}"
+            }
+            206 -> {
+                if(resultCode == Activity.RESULT_OK) {
+                    var t2 = data?.getParcelableExtra<TestClass>("test2")
+                    txtView1.text = "t2.data10 = ${t2?.data10}\n"
+                    txtView1.append("t2.data20 = ${t2?.data20}")
+                }
             }
             else -> txtView1.text = "Hmm, I'm not sure about that."
         }

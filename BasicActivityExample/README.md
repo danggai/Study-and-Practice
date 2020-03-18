@@ -18,6 +18,8 @@
 4. intent에 putExtra(...)를 통해 데이터를 액티비티 간 전달 가능.
     - 여러 변수형에 대해 overwrite된 함수들이 존재한다.
 
+5. Intent를 통해 객체를 전달할 때는 Parcelable 인터페이스를 상속받은 클래스만 전달 가능.
+
 
 # Preview
 
