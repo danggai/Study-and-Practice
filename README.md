@@ -50,3 +50,5 @@
 
 4. [Async Task](https://github.com/danggai/Kotlin-Android-Examples/tree/master/AsyncTaskExample)
 
+5. [Basic Activity](https://github.com/danggai/Kotlin-Android-Examples/tree/master/BasicActivityExample)
+
