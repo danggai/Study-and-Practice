@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         btn1.setOnClickListener {
             var intent = Intent("com.test.intentApp")
-    
+
             intent.putExtra("from", "Main Example")
 
             startActivityForResult(intent, 1)

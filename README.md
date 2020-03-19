@@ -52,3 +52,5 @@
 
 5. [Basic Activity](https://github.com/danggai/Kotlin-Android-Examples/tree/master/BasicActivityExample)
 
+6. [Intent to AnotherApp](https://github.com/danggai/Kotlin-Android-Examples/tree/master/AnotherAppIntentExample)
+
