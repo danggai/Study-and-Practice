@@ -56,4 +56,4 @@
 
 7. [Broadcast Receiver](https://github.com/danggai/Kotlin-Android-Examples/tree/master/BroadCastReceiverExample1)
 
-8. [OS Brocast Receiver](https://github.com/danggai/Kotlin-Android-Examples/tree/master/OSReceiverExample)
+8. [OS Broadcast Receiver](https://github.com/danggai/Kotlin-Android-Examples/tree/master/OSReceiverExample)
