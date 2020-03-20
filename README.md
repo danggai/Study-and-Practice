@@ -55,3 +55,5 @@
 6. [Intent to AnotherApp](https://github.com/danggai/Kotlin-Android-Examples/tree/master/AnotherAppIntentExample)
 
 7. [Broadcast Receiver](https://github.com/danggai/Kotlin-Android-Examples/tree/master/BroadCastReceiverExample1)
+
+8. [OS Brocast Receiver](https://github.com/danggai/Kotlin-Android-Examples/tree/master/OSReceiverExample)
