@@ -64,5 +64,5 @@
 
 11. [Basic Fragment](https://github.com/danggai/Kotlin-Android-Examples/tree/master/FragmentExample)
 
-12. [Basic Fragment](https://github.com/danggai/Kotlin-Android-Examples/tree/master/ActivityControllerExample)
+12. [Activity Controller](https://github.com/danggai/Kotlin-Android-Examples/tree/master/ActivityControllerExample)
 
