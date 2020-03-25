@@ -61,3 +61,5 @@
 9. [Service](https://github.com/danggai/Kotlin-Android-Examples/tree/master/ServiceExample)
 
 10. [IPC](https://github.com/danggai/Kotlin-Android-Examples/tree/master/IPCExample)
+
+11. [Basic Fragment](https://github.com/danggai/Kotlin-Android-Examples/tree/master/FragmentExample)
