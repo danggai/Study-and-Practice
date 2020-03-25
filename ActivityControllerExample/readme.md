@@ -1,13 +1,13 @@
 # ActivityController Example
 
-    - Controller¶õ, ´«¿¡ º¸ÀÌ´Â È­¸éµéÀ» °ü¸®ÇÏ´Â ¿ä¼Ò¸¦ Controller¶ó°í ÄªÇÑ´Ù.
-    - View¿¡ Ãâ·ÂµÇ´Â ¸ðµç È­¸éÀÌ FragmentÀÎ °æ¿ì, ÀÌ¸¦ °ü¸®ÇÏ´Â Activity¸¦ ControllerÀÇ ¿ªÇÒÀ» ÇÑ´Ù.
+  - Controllerëž€, ëˆˆì— ë³´ì´ëŠ” í™”ë©´ë“¤ì„ ê´€ë¦¬í•˜ëŠ” ìš”ì†Œë¥¼ Controllerë¼ê³  ì¹­í•œë‹¤.
+  - Viewì— ì¶œë ¥ë˜ëŠ” ëª¨ë“  í™”ë©´ì´ Fragmentì¸ ê²½ìš°, ì´ë¥¼ ê´€ë¦¬í•˜ëŠ” Activityë¥¼ Controllerì˜ ì—­í• ì„ í•œë‹¤.
 
-# ÁÖ¿ä ÇÐ½À ³»¿ë
+# ì£¼ìš” í•™ìŠµ ë‚´ìš©
 
-    - Fragment¿¡¼­´Â °´Ã¼ÀÇ ÁÖ¼Ò °ªÀ» ¾ò¾î¾ß UI¿¡ Á¢±Ù °¡´É
-        - findViewById¸¦ ÅëÇØ ÁÖ¼Ò °ªÀ» ¾òÀ» ¼ö ÀÖÀ½.
-    - ActivityControllerÀ» °ª Àü´ÞÀÇ ¸Å°³Ã¼·Î È°¿ëÇÏ¿© Fragment°£ Àü¼Û °¡´É.
+  - Fragmentì—ì„œëŠ” ê°ì²´ì˜ ì£¼ì†Œ ê°’ì„ ì–»ì–´ì•¼ UIì— ì ‘ê·¼ ê°€ëŠ¥
+    - findViewByIdë¥¼ í†µí•´ ì£¼ì†Œ ê°’ì„ ì–»ì„ ìˆ˜ ìžˆìŒ.
+  - ActivityControllerì„ ê°’ ì „ë‹¬ì˜ ë§¤ê°œì²´ë¡œ í™œìš©í•˜ì—¬ Fragmentê°„ ì „ì†¡ ê°€ëŠ¥.
 
 # preview
 
