@@ -66,3 +66,6 @@
 
 12. [Activity Controller](https://github.com/danggai/Kotlin-Android-Examples/tree/master/ActivityControllerExample)
 
+13. [Dialog Fragment](https://github.com/danggai/Kotlin-Android-Examples/tree/master/DialogFragmentExample)
+
+
