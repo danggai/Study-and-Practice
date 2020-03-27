@@ -9,6 +9,6 @@
 
 # preview
 
-![](https://github.com/danggai/Kotlin-Android-Examples/blob/master/ListFragmentExmaple/preview.gif?raw=true)
+![](https://github.com/danggai/Kotlin-Android-Examples/blob/master/ListFragmentExample/preview.gif?raw=true)
 
  
