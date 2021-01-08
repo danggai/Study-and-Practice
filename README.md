@@ -43,31 +43,17 @@
 - 수강 기간: 2020-03-17 ~ 
 
 1. [Basic Permission](https://github.com/danggai/Kotlin-Android-Examples/tree/master/PermissionExample)
-
 2. [Basic Thread](https://github.com/danggai/Kotlin-Android-Examples/tree/master/ThreadExample)
-
 3. [Handler](https://github.com/danggai/Kotlin-Android-Examples/tree/master/HandlerExample)
-
 4. [Async Task](https://github.com/danggai/Kotlin-Android-Examples/tree/master/AsyncTaskExample)
-
 5. [Basic Activity](https://github.com/danggai/Kotlin-Android-Examples/tree/master/BasicActivityExample)
-
 6. [Intent to AnotherApp](https://github.com/danggai/Kotlin-Android-Examples/tree/master/AnotherAppIntentExample)
-
 7. [Broadcast Receiver](https://github.com/danggai/Kotlin-Android-Examples/tree/master/BroadCastReceiverExample1)
-
 8. [OS Broadcast Receiver](https://github.com/danggai/Kotlin-Android-Examples/tree/master/OSReceiverExample)
-
 9. [Service](https://github.com/danggai/Kotlin-Android-Examples/tree/master/ServiceExample)
-
 10. [IPC](https://github.com/danggai/Kotlin-Android-Examples/tree/master/IPCExample)
-
 11. [Basic Fragment](https://github.com/danggai/Kotlin-Android-Examples/tree/master/FragmentExample)
-
 12. [Activity Controller](https://github.com/danggai/Kotlin-Android-Examples/tree/master/ActivityControllerExample)
-
 13. [List Fragment](https://github.com/danggai/Kotlin-Android-Examples/tree/master/ListFragmentExample)
-
 14. [Dialog Fragment](https://github.com/danggai/Kotlin-Android-Examples/tree/master/DialogFragmentExample)
-
-
+15. [Localization](https://github.com/danggai/Kotlin-Android-Examples/tree/master/LocalizationExample)
