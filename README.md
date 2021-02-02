@@ -6,7 +6,7 @@
 내 입 맛대로 마음대로 수정해서 만들어짐!
 
 # [코틀린 기반 안드로이드 앱 개발 1단계](https://edu.goorm.io/lecture/20669/2020-new-%EC%BD%94%ED%8B%80%EB%A6%B0-%EA%B8%B0%EB%B0%98-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C-part1-kotlin-ui-programming)
-- 수강 기간: 2020-03-09 ~ 03-16
+- 수강 기간: 2020-03-09 ~ 2020-03-16
 
 1. [ProgressBar](https://github.com/danggai/Kotlin-Android-Examples/tree/master/ProgeassBarExample)
 
