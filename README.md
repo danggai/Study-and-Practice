@@ -73,3 +73,4 @@
 
 15. [Localization](https://github.com/danggai/Kotlin-Android-Examples/tree/master/LocalizationExample)
 
+//
