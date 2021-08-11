@@ -1,8 +1,8 @@
-package com.example.unittestexample
+package com.example.tddexample
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.unittestexample.ui.main.MainFragment
+import com.example.tddexample.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
 

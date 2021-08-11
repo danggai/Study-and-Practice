@@ -1,8 +1,7 @@
-package com.example.unittestexample
+package com.example.tddexample
 
 import org.junit.Test
 
-import org.junit.Assert.*
 import kotlin.random.Random
 import kotlin.time.ExperimentalTime
 import kotlin.time.measureTimedValue
