@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">UnitTestExample</string>
+    <string name="app_name">TDDExample</string>
+
+    <string name="plus">PLUS</string>
+    <string name="minus">MINUS</string>
+    <string name="multiple">MULTIPLE</string>
 </resources>
