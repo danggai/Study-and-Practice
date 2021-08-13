@@ -28,58 +28,53 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@id/tv_result"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            >
+            app:layout_constraintRight_toRightOf="parent">
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:layout_width="0dp"
-                android:layout_weight="3"
                 android:layout_height="50dp"
-                android:text="@={vm.firstNumber}"
-                android:textColor="@color/black"
+                android:layout_weight="3"
+                android:backgroundTint="@color/black"
                 android:digits="0123456789."
                 android:inputType="numberDecimal"
-                />
+                android:text="@={vm.firstNumber}"
+                android:textColor="@color/black" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="0dp"
-                android:layout_weight="3"
-                android:layout_margin="20dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="3"
                 android:orientation="vertical">
 
                 <Button
                     style="@style/Button"
-                    android:text="@string/plus"
-                    android:onClick="@{() -> vm.onClickPlus()}"
-                    />
+                    android:onClick="@{(v) -> vm.onClickPlus()}"
+                    android:text="@string/plus" />
 
                 <Button
                     style="@style/Button"
-                    android:text="@string/minus"
-                    android:onClick="@{() -> vm.onClickMinus()}"
-                    />
+                    android:onClick="@{(v) -> vm.onClickMinus()}"
+                    android:text="@string/minus" />
 
                 <Button
                     style="@style/Button"
-                    android:text="@string/multiple"
-                    android:onClick="@{() -> vm.onClickMultiple()}"
-                    />
+                    android:onClick="@{(v) -> vm.onClickMultiple()}"
+                    android:text="@string/multiple" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:layout_width="0dp"
-                android:layout_weight="3"
                 android:layout_height="50dp"
-                android:text="@={vm.secondNumber}"
-                android:textColor="@color/black"
+                android:layout_weight="3"
+                android:backgroundTint="@color/black"
                 android:digits="0123456789."
                 android:inputType="numberDecimal"
-                />
+                android:text="@={vm.secondNumber}"
+                android:textColor="@color/black" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
-
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_result"
@@ -87,7 +82,6 @@
             android:layout_height="50dp"
             android:textAlignment="center"
             android:gravity="center"
-            android:textColorHint="#555555"
             android:text="@={vm.message}"
             android:textColor="@color/black"
             android:background="#dddddd"
