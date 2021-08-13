@@ -2,7 +2,7 @@ package com.example.tddexample.ui.main
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
-import com.example.tddexample.util.CommonFunction
+import com.example.tddexample.util.CalculationUtils
 import com.example.tddexample.util.NonNullMutableLiveData
 
 class MainViewModel : ViewModel() {
@@ -14,7 +14,7 @@ class MainViewModel : ViewModel() {
     fun onClickPlus() {
         Log.d("myLog", "")
         try {
-            setMessage(CommonFunction.plus(firstNumber.value.toInt(), secondNumber.value.toInt()))
+            setMessage(CalculationUtils.plus(firstNumber.value.toInt(), secondNumber.value.toInt()))
         } catch (e: Exception) {
             setMessage("calculate failed.")
             Log.e("error", "")
@@ -24,7 +24,7 @@ class MainViewModel : ViewModel() {
     fun onClickMinus() {
         Log.d("myLog", "")
         try {
-            setMessage( CommonFunction.minus(firstNumber.value.toInt(), secondNumber.value.toInt()))
+            setMessage( CalculationUtils.minus(firstNumber.value.toInt(), secondNumber.value.toInt()))
         } catch (e: Exception) {
             setMessage("calculate failed.")
             Log.e("error", "")
@@ -34,7 +34,7 @@ class MainViewModel : ViewModel() {
     fun onClickMultiple() {
         Log.d("myLog", "")
         try {
-            setMessage( CommonFunction.multiple(firstNumber.value.toInt(), secondNumber.value.toInt()))
+            setMessage( CalculationUtils.multiple(firstNumber.value.toInt(), secondNumber.value.toInt()))
         } catch (e: Exception) {
             setMessage("calculate failed.")
             Log.e("error", "")

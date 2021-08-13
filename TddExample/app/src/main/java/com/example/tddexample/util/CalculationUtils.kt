@@ -1,6 +1,6 @@
 package com.example.tddexample.util
 
-object CommonFunction {
+object CalculationUtils {
     fun plus(origin: Int, dest: Int): Int {
         return origin + dest
     }
