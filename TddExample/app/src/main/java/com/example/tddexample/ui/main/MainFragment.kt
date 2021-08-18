@@ -18,11 +18,10 @@ class MainFragment : Fragment() {
     }
 
     private lateinit var viewModel: MainViewModel
+    lateinit var binding: MainFragmentBinding
 
     @LayoutRes
     fun getLayoutResId() = R.layout.main_fragment
-
-    private lateinit var binding: MainFragmentBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return DataBindingUtil.inflate<MainFragmentBinding>(inflater, getLayoutResId(), container, false).apply { binding = this }.root

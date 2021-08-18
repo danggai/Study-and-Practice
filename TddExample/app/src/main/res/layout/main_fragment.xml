@@ -31,6 +31,7 @@
             app:layout_constraintRight_toRightOf="parent">
 
             <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_origin"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="3"
@@ -48,23 +49,27 @@
                 android:orientation="vertical">
 
                 <Button
+                    android:id="@+id/btn_plus"
                     style="@style/Button"
                     android:onClick="@{(v) -> vm.onClickPlus()}"
                     android:text="@string/plus" />
 
                 <Button
+                    android:id="@+id/btn_minus"
                     style="@style/Button"
                     android:onClick="@{(v) -> vm.onClickMinus()}"
                     android:text="@string/minus" />
 
                 <Button
                     style="@style/Button"
+                    android:id="@+id/btn_multiple"
                     android:onClick="@{(v) -> vm.onClickMultiple()}"
                     android:text="@string/multiple" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_another"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="3"
