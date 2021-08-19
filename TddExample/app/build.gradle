@@ -45,6 +45,11 @@ android {
         animationsDisabled = true
         execution 'ANDROIDX_TEST_ORCHESTRATOR'
     }
+    configurations.all {
+        resolutionStrategy {
+            force 'androidx.test:monitor:1.4.0'
+        }
+    }
 }
 
 dependencies {
@@ -79,6 +84,6 @@ dependencies {
 
     // UI Test
     // Required -- Espresso
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
 }
