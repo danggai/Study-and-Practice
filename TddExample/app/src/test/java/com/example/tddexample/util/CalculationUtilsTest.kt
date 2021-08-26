@@ -5,12 +5,19 @@ import org.hamcrest.CoreMatchers.not
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
+import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
+import org.robolectric.shadows.ShadowLog
 
 @RunWith(MockitoJUnitRunner::class)
 class CalculationUtilsTest  {
+
+    @Before
+    fun setup() {
+        ShadowLog.stream = System.out // for logging in jvm
+    }
 
     @Test
     fun testPlus() {
