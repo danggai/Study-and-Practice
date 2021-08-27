@@ -14,6 +14,7 @@ class MainViewModel : ViewModel() {
     fun onClickPlus() {
         Log.d("myLog", "")
         try {
+            Log.d("myLog", "calculate success.")
             setMessage(CalculationUtils.plus(firstNumber.value.toInt(), secondNumber.value.toInt()))
         } catch (e: Exception) {
             setMessage("calculate failed.")
@@ -24,6 +25,7 @@ class MainViewModel : ViewModel() {
     fun onClickMinus() {
         Log.d("myLog", "")
         try {
+            Log.d("myLog", "calculate success.")
             setMessage( CalculationUtils.minus(firstNumber.value.toInt(), secondNumber.value.toInt()))
         } catch (e: Exception) {
             setMessage("calculate failed.")
@@ -34,6 +36,7 @@ class MainViewModel : ViewModel() {
     fun onClickMultiple() {
         Log.d("myLog", "")
         try {
+            Log.d("myLog", "calculate success.")
             setMessage( CalculationUtils.multiple(firstNumber.value.toInt(), secondNumber.value.toInt()))
         } catch (e: Exception) {
             setMessage("calculate failed.")

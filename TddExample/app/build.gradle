@@ -82,7 +82,10 @@ dependencies {
     // Integration Test
     // Required -- Robolectric
     testImplementation "org.robolectric:robolectric:4.6.1"
+    // Required -- Robolectric environment
+    testImplementation 'androidx.test:core:1.4.0'
     // Optional -- Testing Fragment
+    testImplementation "org.robolectric:shadows-supportv4:3.8"
     debugImplementation "androidx.fragment:fragment-testing:1.3.6"
 
     // UI Test
