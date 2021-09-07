@@ -78,6 +78,10 @@ dependencies {
     // Optional -- Mockito framework
     testImplementation 'org.mockito:mockito-core:3.11.2'
     testImplementation 'org.mockito:mockito-inline:2.13.0'
+    // Optional -- When you testing LiveData
+    testImplementation "androidx.arch.core:core-testing:2.1.0"
+    // Optional -- When you using Koin library
+    testImplementation "org.koin:koin-test:$koin-version"
     // Optional -- Assertion library: Hamcrest
     androidTestImplementation 'org.hamcrest:hamcrest-core:2.2'
     // Optional -- Assertion Library: Truth
@@ -86,7 +90,7 @@ dependencies {
 
     // Integration Test
     // Required -- Robolectric
-    testImplementation "org.robolectric:robolectric:4.6.1"
+    testImplementation "org.robolectric:robolectric:4.5.0"
     // Required -- Robolectric environment
     testImplementation 'androidx.test:core:1.4.0'
     // Optional -- Testing Fragment
