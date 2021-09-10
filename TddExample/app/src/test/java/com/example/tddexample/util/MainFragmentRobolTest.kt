@@ -1,9 +1,9 @@
 package com.example.tddexample.util
 
+import android.app.Application
 import android.util.Log
 import androidx.fragment.app.testing.FragmentScenario
-import androidx.lifecycle.MutableLiveData
-import com.example.tddexample.R
+import com.example.tddexample.BaseRobolectricTest
 import com.example.tddexample.ui.main.MainFragment
 import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.MatcherAssert
@@ -12,18 +12,20 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
-import org.robolectric.shadows.ShadowLog
+import org.robolectric.annotation.LooperMode
 
-
+@LooperMode(LooperMode.Mode.PAUSED)
+@Config(
+    manifest = "src/main/AndroidManifest.xml",
+    application = Application::class
+)
 @RunWith(RobolectricTestRunner::class)
-    @Config(manifest = Config.NONE)
-    class MainFragmentRobolTest {
+class MainFragmentRobolTest: BaseRobolectricTest() {
 
     private lateinit var fragment: FragmentScenario<MainFragment>
 
     @Before
     fun setup() {
-        ShadowLog.stream = System.out // for logging in jvm
         fragment = FragmentScenario.launch(MainFragment::class.java)
     }
 

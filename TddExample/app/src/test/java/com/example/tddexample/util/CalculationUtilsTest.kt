@@ -1,5 +1,7 @@
 package com.example.tddexample.util
 
+import android.app.Application
+import com.example.tddexample.BaseRobolectricTest
 import com.google.common.truth.Truth
 import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.CoreMatchers.not
@@ -9,11 +11,18 @@ import org.junit.Before
 import org.junit.Test
 import org.junit.jupiter.api.BeforeEach
 import org.junit.runner.RunWith
-import org.mockito.junit.MockitoJUnitRunner
+import org.robolectric.RobolectricTestRunner
+import org.robolectric.annotation.Config
+import org.robolectric.annotation.LooperMode
 import org.robolectric.shadows.ShadowLog
 
-@RunWith(MockitoJUnitRunner::class)
-class CalculationUtilsTest  {
+@LooperMode(LooperMode.Mode.PAUSED)
+@Config(
+    manifest = "./src/main/AndroidManifest.xml",
+    application = Application::class
+)
+@RunWith(RobolectricTestRunner::class)
+class CalculationUtilsTest: BaseRobolectricTest() {
 
     @Before
     fun setup() {
@@ -25,8 +34,6 @@ class CalculationUtilsTest  {
     fun setup_() {
         ShadowLog.stream = System.out // for logging in jvm
     }
-
-
 
     @Test
     fun testPlus() {
