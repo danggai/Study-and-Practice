@@ -39,7 +39,6 @@ android {
     testOptions {
         // for using Robolectric
         unitTests.includeAndroidResources = true
-        enableUnitTestBinaryResources=true
 
         // for using Espresso
         unitTests.returnDefaultValues = true
