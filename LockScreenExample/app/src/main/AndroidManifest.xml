@@ -10,13 +10,38 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LockScreenExample">
 
+        <receiver
+            android:name=".ui.ScreenOffReceiver"
+            android:enabled="true"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.appwidget.action.ACTION_SCREEN_ON" />
+                <action android:name="android.appwidget.action.ACTION_SCREEN_OFF" />
+            </intent-filter>
+        </receiver>
+
         <activity
-            android:name=".ui.main.MainActivity"
-            android:exported="true">
+            android:name=".ui.lockscreen.LockScreenActivity"
+            android:exported="true"
+            android:screenOrientation="fullSensor"
+            android:showOnLockScreen="true"
+            android:launchMode="singleTask"
+            >
+        </activity>
+
+        <activity
+            android:exported="true"
+            android:name=".ui.homeforward.HomeForwardActiviity"
+            android:launchMode="singleTask"
+            >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
     </application>
