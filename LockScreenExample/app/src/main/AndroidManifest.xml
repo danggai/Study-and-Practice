@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="danggai.app.lockscreenexample">
 
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,11 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LockScreenExample">
 
+        <service
+            android:name=".service.ManageForegroundService"
+            android:enabled="true"
+            android:exported="false" />
+
         <receiver
             android:name=".ui.ScreenOffReceiver"
             android:enabled="true"
-            android:exported="true"
-            >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.ACTION_SCREEN_ON" />
                 <action android:name="android.appwidget.action.ACTION_SCREEN_OFF" />
@@ -22,28 +29,30 @@
         </receiver>
 
         <activity
-            android:name=".ui.lockscreen.LockScreenActivity"
+            android:name=".ui.main.MainActivity"
             android:exported="true"
+            android:launchMode="singleTop"
             android:screenOrientation="fullSensor"
-            android:showOnLockScreen="true"
-            android:launchMode="singleTask"
-            >
-        </activity>
-
-        <activity
-            android:exported="true"
-            android:name=".ui.homeforward.HomeForwardActiviity"
-            android:launchMode="singleTask"
-            >
-
+            android:showOnLockScreen="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.HOME"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ui.lockscreen.LockScreenActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor"
+            android:showOnLockScreen="true" />
+
+        <activity
+            android:name=".ui.homeforward.HomeForwardActiviity"
+            android:exported="true"
+            android:launchMode="singleTask" />
+
     </application>
 
 </manifest>

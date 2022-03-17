@@ -1,17 +1,20 @@
 package danggai.app.lockscreenexample.ui.lockscreen
 
-import android.content.Context
+import android.annotation.TargetApi
+import android.content.Intent
+import android.net.Uri
+import android.os.Build
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import android.renderscript.ScriptGroup
+import android.provider.Settings
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.LifecycleOwner
 import danggai.app.lockscreenexample.R
 import danggai.app.lockscreenexample.databinding.LockScreenFragmentBinding
+import danggai.app.lockscreenexample.service.ManageForegroundService
 import danggai.app.lockscreenexample.util.log
 import danggai.app.resinwidget.util.EventObserver
 
@@ -40,7 +43,6 @@ class LockScreenFragment : Fragment() {
         binding.vm = viewModel
         binding.lifecycleOwner = viewLifecycleOwner
 
-
         initLv()
     }
 
@@ -49,6 +51,7 @@ class LockScreenFragment : Fragment() {
              if (it) {
                  activity?.let { activity ->
                      log.e()
+                     ManageForegroundService.startService(requireContext())
                      activity.finishAffinity()
                  }
              }
