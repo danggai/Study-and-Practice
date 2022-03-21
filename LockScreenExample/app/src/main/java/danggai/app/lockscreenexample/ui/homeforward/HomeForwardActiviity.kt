@@ -17,15 +17,9 @@ class HomeForwardActiviity : AppCompatActivity(){
         parse()
     }
 
-    private fun parse(){
-
-        // TODO(Foreground Service 여부 확인하여 없으면 LockScreenActivity 실행)
-        if (!isMyServiceRunning(ManageForegroundService::class.java)) {
-            log.e()
-            LockScreenActivity.startActivity(this)
-        } else {
-            finish()
-        }
+    private fun parse() {
+//        LockScreenActivity.startActivity(this)
+        ManageForegroundService.startService(applicationContext)
 
         finish()
     }

@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">LockScreenExample</string>
 
-    <string name="foreground_service_title">%s님이 테스트기기 사용 중입니다.</string>
+    <string name="foreground_service_title_init">테스트 기기 미인증 상태입니다.</string>
+    <string name="foreground_service_using_title">%s님이 테스트기기 사용 중입니다.</string>
+    <string name="foreground_service_using_msg">남은 사용 시간 00:00:00</string>
 </resources>

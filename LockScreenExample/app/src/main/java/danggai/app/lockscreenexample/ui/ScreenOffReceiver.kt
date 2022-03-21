@@ -3,6 +3,7 @@ package danggai.app.lockscreenexample.ui
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
+import danggai.app.lockscreenexample.service.ManageForegroundService
 import danggai.app.lockscreenexample.ui.lockscreen.LockScreenActivity
 import danggai.app.lockscreenexample.util.log
 
@@ -20,7 +21,8 @@ class ScreenOffReceiver : BroadcastReceiver() {
             intent.action.equals( Intent.ACTION_SCREEN_OFF) -> {
                 log.e("ACTION_SCREEN_OFF")
 
-                LockScreenActivity.startActivity(context)
+                ManageForegroundService.initService(context)
+//                LockScreenActivity.startActivity(context)
             }
             else -> {
 

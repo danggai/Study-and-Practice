@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="40dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/bi_danal"
+            android:paddingHorizontal="50dp"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            style="@style/TextView"
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="소속 팀"
+            />
+
+        <EditText
+            android:id="@+id/et_team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            style="@style/TextView"
+            android:id="@+id/tv_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이름"
+            />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            style="@style/TextView"
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="휴대폰번호"
+            />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true"
+            />
+
+        <!--    <androidx.appcompat.widget.LinearLayoutCompat-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:paddingHorizontal="10dp"-->
+        <!--        android:paddingVertical="10dp"-->
+        <!--        android:layout_margin="15dp"-->
+        <!--        android:layout_gravity="center"-->
+        <!--        android:clickable="true"-->
+        <!--        android:focusable="true"-->
+        <!--        >-->
+
+        <!--        <androidx.appcompat.widget.AppCompatImageView-->
+        <!--            android:layout_width="30dp"-->
+        <!--            android:layout_height="30dp"-->
+        <!--            android:layout_marginRight="5dp"-->
+        <!--            android:scaleType="fitXY"-->
+        <!--            android:src="@drawable/bi_telegram"-->
+        <!--            />-->
+
+        <!--        <androidx.appcompat.widget.AppCompatTextView-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:text="Telegram으로 인증"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            />-->
+
+        <!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+        <Button
+            android:id="@+id/btn_send_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="telegram으로 인증"
+            android:paddingVertical="10dp"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            style="@style/TextView"
+            android:id="@+id/tv_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTP"
+            android:maxLines="1"
+            android:singleLine="true"
+            />
+
+        <EditText
+            android:id="@+id/et_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:inputType="number"
+            />
+
+        <!--    <androidx.appcompat.widget.LinearLayoutCompat-->
+        <!--        android:id="@+id/ll_unlock"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:paddingHorizontal="10dp"-->
+        <!--        android:paddingVertical="10dp"-->
+        <!--        android:layout_margin="15dp"-->
+        <!--        android:layout_gravity="center"-->
+        <!--        android:clickable="true"-->
+        <!--        android:focusable="true"-->
+        <!--        >-->
+
+        <!--        <androidx.appcompat.widget.AppCompatImageView-->
+        <!--            android:layout_width="30dp"-->
+        <!--            android:layout_height="30dp"-->
+        <!--            android:layout_marginRight="5dp"-->
+        <!--            android:scaleType="fitXY"-->
+        <!--            android:src="@drawable/baseline_lock_open_24"-->
+        <!--            android:tint="@color/black"-->
+
+        <!--            />-->
+
+        <!--        <androidx.appcompat.widget.AppCompatTextView-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:text="기기 잠금 해제"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            />-->
+
+        <!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+        <Button
+            android:id="@+id/btn_unlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:paddingVertical="10dp"
+            android:backgroundTint="@color/purple_500"
+            android:drawableLeft="@drawable/baseline_lock_open_24"
+            android:drawableTint="@color/white"
+            android:drawablePadding="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="기기 잠금 해제" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>

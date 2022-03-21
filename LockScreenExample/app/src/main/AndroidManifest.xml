@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="danggai.app.lockscreenexample">
 
+    <uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
@@ -44,9 +45,7 @@
         <activity
             android:name=".ui.lockscreen.LockScreenActivity"
             android:exported="true"
-            android:launchMode="singleTop"
-            android:screenOrientation="fullSensor"
-            android:showOnLockScreen="true" />
+            android:screenOrientation="fullSensor" />
 
         <activity
             android:name=".ui.homeforward.HomeForwardActiviity"

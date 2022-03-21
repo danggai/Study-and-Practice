@@ -9,11 +9,12 @@
             type="danggai.app.lockscreenexample.ui.lockscreen.LockScreenViewModel"/>
     </data>
 
-    <FrameLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/transparent"
+        android:background="@color/white"
+        android:orientation="vertical"
         tools:context=".ui.lockscreen.LockScreenActivity" />
 
 </layout>

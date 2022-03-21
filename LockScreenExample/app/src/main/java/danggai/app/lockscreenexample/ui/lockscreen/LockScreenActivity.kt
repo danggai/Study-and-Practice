@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import danggai.app.lockscreenexample.R
 import danggai.app.lockscreenexample.databinding.LockScreenActivityBinding
+import danggai.app.lockscreenexample.service.ManageForegroundService
 import danggai.app.lockscreenexample.util.log
 
 

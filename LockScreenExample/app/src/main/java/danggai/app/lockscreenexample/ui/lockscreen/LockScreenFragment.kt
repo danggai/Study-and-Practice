@@ -1,12 +1,7 @@
 package danggai.app.lockscreenexample.ui.lockscreen
 
-import android.annotation.TargetApi
-import android.content.Intent
-import android.net.Uri
-import android.os.Build
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import android.provider.Settings
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -44,6 +39,14 @@ class LockScreenFragment : Fragment() {
         binding.lifecycleOwner = viewLifecycleOwner
 
         initLv()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        if (viewModel.lvAuth.value != true) {
+            log.e()
+            ManageForegroundService.startService(requireContext())
+        }
     }
 
     private fun initLv() {

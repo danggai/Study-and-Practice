@@ -77,8 +77,9 @@ class MainFragment : Fragment() {
                 }
 
                 if (boolean) {
-                    ManageForegroundService.startService(context)
+                    ManageForegroundService.initService(context)
                     context.registerReceiver(receiver, filter)
+                    requireActivity().finish()
                 } else {
                     ManageForegroundService.stopService(context)
                     try {
