@@ -30,6 +30,7 @@ class ManageForegroundService() : Service() {
         const val START_FOREGROUND = prefix + "startforeground"
         const val STOP_FOREGROUND = prefix + "stopforeground"
         const val RENEW_FOREGROUND = prefix + "renewforeground"
+
         fun initService(context: Context) {
             val intent = Intent(context, ManageForegroundService::class.java)
             intent.action = INIT_FOREGROUND
@@ -74,6 +75,37 @@ class ManageForegroundService() : Service() {
 
     var mNotificationManager: NotificationManager? = null
 
+    override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        when (intent?.action) {
+            INIT_FOREGROUND -> {
+                log.e("Init Foreground intent received")
+
+                try {
+                    manager.removeView((getSystemService(LAYOUT_INFLATER_SERVICE) as LayoutInflater).inflate(R.layout.lock_screen_overlay, null))
+                } catch(e:Exception) { }
+
+//                LockScreenActivity.startActivity(applicationContext)
+                createOverlayActivity()
+                generateForegroundNotification(applicationContext.getString(R.string.foreground_service_title_init), "")
+            }
+            START_FOREGROUND -> {
+                log.e("Start Foreground intent received")
+                generateForegroundNotification(String.format(applicationContext.getString(R.string.foreground_service_using_title), "김다날"), getString(R.string.foreground_service_using_msg))
+            }
+            STOP_FOREGROUND -> {
+                log.e("Stop Foreground intent received")
+//                LockScreenActivity.startActivity(applicationContext)
+                stopForegroundService()
+            }
+            RENEW_FOREGROUND -> {
+                log.e("Renew Foreground intent received")
+//                createOverlayActivity()
+            }
+
+        }
+        return START_NOT_STICKY
+    }
+
     private fun sendNoti(id: Int) {
         log.e()
 
@@ -106,51 +138,6 @@ class ManageForegroundService() : Service() {
         notificationManager.notify(id, builder.build())
     }
 
-    override fun onBind(intent: Intent?): IBinder? {
-        log.e()
-        return null
-    }
-
-    override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        when (intent?.action) {
-            INIT_FOREGROUND -> {
-                log.e("Init Foreground intent received")
-
-                try {
-                    manager.removeView((getSystemService(LAYOUT_INFLATER_SERVICE) as LayoutInflater).inflate(R.layout.lock_screen_overlay, null))
-                } catch(e:Exception) { }
-
-                val i = Intent(Intent.ACTION_CLOSE_SYSTEM_DIALOGS)
-                applicationContext.sendBroadcast(i)
-
-//                LockScreenActivity.startActivity(applicationContext)
-                createOverlayActivity()
-                generateForegroundNotification(applicationContext.getString(R.string.foreground_service_title_init), "")
-            }
-            START_FOREGROUND -> {
-                log.e("Start Foreground intent received")
-                generateForegroundNotification(String.format(applicationContext.getString(R.string.foreground_service_using_title), "김다날"), getString(R.string.foreground_service_using_msg))
-            }
-            STOP_FOREGROUND -> {
-                log.e("Stop Foreground intent received")
-                createOverlayActivity()
-//                LockScreenActivity.startActivity(applicationContext)
-
-                stopForegroundService()
-            }
-            RENEW_FOREGROUND -> {
-                log.e("Renew Foreground intent received")
-//                createOverlayActivity()
-            }
-
-        }
-        return START_NOT_STICKY
-    }
-
-    override fun onDestroy() {
-        stopForeground(true)
-    }
-
     private fun generateForegroundNotification(title: String, msg: String) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 
@@ -162,7 +149,7 @@ class ManageForegroundService() : Service() {
                 assert(mNotificationManager != null)
                 val notificationChannel =
                     NotificationChannel(
-                        Constant.PUSH_CHANNEL_CHECK_IN_PROGRESS_NOTI_ID, Constant.PUSH_CHANNEL_CHECK_IN_PROGRESS_NOTI_NAME,
+                        Constant.FOREGROUND_SERVICE_ID, Constant.FOREGROUND_SERVICE_NAME,
                         NotificationManager.IMPORTANCE_MIN)
                 notificationChannel.enableLights(false)
                 notificationChannel.lockscreenVisibility = Notification.VISIBILITY_SECRET
@@ -179,7 +166,7 @@ class ManageForegroundService() : Service() {
             val renewPendingIntent = PendingIntent
                 .getService(applicationContext, 1, renewalIntent, PendingIntent.FLAG_IMMUTABLE)
 
-            val builder = NotificationCompat.Builder(this, Constant.PUSH_CHANNEL_CHECK_IN_PROGRESS_NOTI_ID)
+            val builder = NotificationCompat.Builder(this, Constant.FOREGROUND_SERVICE_ID)
 
             builder.setContentTitle(title)
                 .setTicker(title)
@@ -199,11 +186,6 @@ class ManageForegroundService() : Service() {
             notification = builder.build()
             startForeground(mNotificationId, notification)
         }
-    }
-
-    private fun stopForegroundService() {
-        stopForeground(true)
-        stopSelf()
     }
 
     fun createOverlayActivity() {
@@ -230,5 +212,19 @@ class ManageForegroundService() : Service() {
 
         manager.addView(onTopView, params)
 
+    }
+
+    override fun onBind(intent: Intent?): IBinder? {
+        log.e()
+        return null
+    }
+
+    override fun onDestroy() {
+        stopForeground(true)
+    }
+
+    private fun stopForegroundService() {
+        stopForeground(true)
+        stopSelf()
     }
 }

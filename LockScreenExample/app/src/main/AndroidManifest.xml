@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="danggai.app.lockscreenexample">
 
-    <uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:allowBackup="true"
@@ -26,6 +26,8 @@
             <intent-filter>
                 <action android:name="android.appwidget.action.ACTION_SCREEN_ON" />
                 <action android:name="android.appwidget.action.ACTION_SCREEN_OFF" />
+                <action android:name="android.appwidget.action.ACTION_BOOT_COMPLETED" />
+                <action android:name="android.appwidget.action.ACTION_LOCKED_BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
@@ -41,16 +43,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".ui.lockscreen.LockScreenActivity"
-            android:exported="true"
-            android:screenOrientation="fullSensor" />
-
-        <activity
-            android:name=".ui.homeforward.HomeForwardActiviity"
-            android:exported="true"
-            android:launchMode="singleTask" />
 
     </application>
 

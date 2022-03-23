@@ -72,8 +72,13 @@ class MainFragment : Fragment() {
             context?.let { context ->
 
                 val receiver = ScreenOffReceiver()
-                val filter = IntentFilter(Intent.ACTION_SCREEN_OFF).apply {
+                val filter = IntentFilter().apply {
                     this.addAction(Intent.ACTION_SCREEN_ON)
+                    this.addAction(Intent.ACTION_SCREEN_OFF)
+                    this.addAction(Intent.ACTION_BOOT_COMPLETED)
+
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N)
+                        this.addAction(Intent.ACTION_LOCKED_BOOT_COMPLETED)
                 }
 
                 if (boolean) {
