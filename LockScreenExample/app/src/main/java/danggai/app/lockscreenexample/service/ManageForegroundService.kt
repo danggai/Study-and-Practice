@@ -139,7 +139,6 @@ class ManageForegroundService() : Service() {
     }
 
     private fun generateForegroundNotification(title: String, msg: String) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 
             iconNotification = BitmapFactory.decodeResource(resources, R.mipmap.ic_launcher)
             if (mNotificationManager == null) {
@@ -185,7 +184,7 @@ class ManageForegroundService() : Service() {
             }
             notification = builder.build()
             startForeground(mNotificationId, notification)
-        }
+
     }
 
     fun createOverlayActivity() {
