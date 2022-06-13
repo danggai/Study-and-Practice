@@ -1,5 +1,6 @@
 package danggai.app.stateinjetpackcomposesample
 
+import WellnessScreen
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -18,24 +19,13 @@ class MainActivity : ComponentActivity() {
         setContent {
             StateInJetpackComposeSampleTheme {
                 // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background) {
-                    Greeting("Android")
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colors.background
+                ) {
+                    WellnessScreen()
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    StateInJetpackComposeSampleTheme {
-        Greeting("Android")
     }
 }
