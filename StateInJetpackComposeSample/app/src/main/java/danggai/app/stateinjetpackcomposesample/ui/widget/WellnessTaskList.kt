@@ -3,14 +3,15 @@ package danggai.app.stateinjetpackcomposesample.ui.widget
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import danggai.app.stateinjetpackcomposesample.domain.local.WellnessTask
 
 @Composable
 fun WellnessTasksList(
     modifier: Modifier = Modifier,
     onCloseTask: (WellnessTask) -> Unit,
-    list: List<WellnessTask> = remember { getWellnessTasks() }
+    onCheckedTask: (WellnessTask, Boolean) -> Unit,
+    list: List<WellnessTask>
 ) {
     LazyColumn(
         modifier = modifier
@@ -19,9 +20,12 @@ fun WellnessTasksList(
             items = list,
             key = { task -> task.id }
         ) { task ->
-            WellnessTaskItem(taskName = task.label, onClose = { onCloseTask(task) })
+            WellnessTaskItem(
+                taskName = task.label,
+                checked = task.checked,
+                onCheckedChange = { checked -> onCheckedTask(task, checked)},
+                onClose = { onCloseTask(task) }
+            )
         }
     }
 }
-
-private fun getWellnessTasks() = List(30) { i -> WellnessTask(i, "Task # $i") }
