@@ -167,11 +167,12 @@ fun Item(chara: Character) {
     }
 }
 
+val int = mutableStateOf(0)
 @Composable
 fun CountBtn() {
-    val count = remember { mutableStateOf(0) }
+    val count = remember { int }
     Button(
-        onClick = { count.value += 1 },
+        onClick = { int.value += 1 },
         modifier = Modifier
             .width(200.dp)
             .height(50.dp)
