@@ -1,13 +1,12 @@
 package danggai.app.jetpackcomposebasics
 
-import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.Spring
-import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.animation.core.spring
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -18,6 +17,7 @@ import androidx.compose.material.icons.filled.ExpandMore
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -32,20 +32,6 @@ class MainActivity : ComponentActivity() {
                 MyApp()
             }
         }
-    }
-}
-
-@Preview(
-    showBackground = true,
-    widthDp = 320,
-    uiMode = UI_MODE_NIGHT_YES,
-    name = "DefaultPreviewDark"
-)
-@Preview(showBackground = true, widthDp = 320)
-@Composable
-fun DefaultPreview() {
-    JetpackComposeBasicsTheme {
-        Greetings()
     }
 }
 
@@ -81,12 +67,15 @@ private fun Greeting(name: String) {
     ) {
         var expanded by remember { mutableStateOf(false) }
 
-        Row(modifier = Modifier.padding(24.dp).padding(12.dp).animateContentSize(
-            animationSpec = spring(
-                dampingRatio = Spring.DampingRatioMediumBouncy,
-                stiffness = Spring.StiffnessLow
-            )
-        )) {
+        Row(modifier = Modifier
+            .padding(24.dp)
+            .padding(12.dp)
+            .animateContentSize(
+                animationSpec = spring(
+                    dampingRatio = Spring.DampingRatioMediumBouncy,
+                    stiffness = Spring.StiffnessLow
+                )
+            )) {
             Column(
                 modifier = Modifier
                     .weight(1f)
@@ -136,10 +125,48 @@ fun OnboardingScreen(
     }
 }
 
+//@Preview(
+//    showBackground = true,
+//    widthDp = 320,
+//    uiMode = UI_MODE_NIGHT_YES,
+//    name = "DefaultPreviewDark"
+//)
+//@Preview(showBackground = true, widthDp = 320)
+//@Composable
+//fun DefaultPreview() {
+//    JetpackComposeBasicsTheme {
+//        Greetings()
+//    }
+//}
+
 @Preview(showBackground = true, widthDp = 320, heightDp = 320)
 @Composable
 fun OnboardingPreview() {
     JetpackComposeBasicsTheme {
         OnboardingScreen(onContinueClicked = {})
+    }
+}
+
+@Preview()
+@Composable
+fun Preview() {
+    Column(
+        Modifier.background(Color(0xff555555))
+    ) {
+        Card(modifier = Modifier
+            .padding(horizontal = 20.dp)
+            .background(color = Color(0xffcccccc))
+            .padding(vertical = 20.dp)
+        ) {
+            Text(text = "hello, world!", color = Color.Black)
+        }
+
+        Card(modifier = Modifier
+            .padding(vertical = 20.dp)
+            .background(color = Color(0xffcccccc))
+            .padding(horizontal = 20.dp)
+        ) {
+            Text(text = "hello, world!", color = Color.Black)
+        }
     }
 }
