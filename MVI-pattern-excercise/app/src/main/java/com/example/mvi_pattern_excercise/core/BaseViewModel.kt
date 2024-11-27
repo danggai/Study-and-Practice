@@ -11,13 +11,16 @@ import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch
 
 abstract class BaseViewModel<Event : UiEvent, State : UiState, Effect : UiEffect> : ViewModel() {
+    init {
+        subscribeEvents()
+    }
+
     // Create Initial State of View
     private val initialState : State by lazy { createInitialState() }
     abstract fun createInitialState() : State
 
-    init {
-        subscribeEvents()
-    }
+    // Handle each event
+    abstract fun handleEvent(event : Event)
 
     // Get Current State
     val currentState: State
@@ -58,7 +61,4 @@ abstract class BaseViewModel<Event : UiEvent, State : UiState, Effect : UiEffect
             }
         }
     }
-
-    // Handle each event
-    abstract fun handleEvent(event : Event)
 }
