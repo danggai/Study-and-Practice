@@ -1,33 +1,29 @@
 package com.example.mvi_pattern_excercise.core
 
 import android.os.Bundle
+import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
 import androidx.viewbinding.ViewBinding
-import kotlin.reflect.KClass
 
-abstract class BaseActivity<VB : ViewBinding>(
-    private val bindingClass: KClass<VB>
-) : AppCompatActivity() {
+abstract class BaseActivity<VB : ViewBinding, VM : ViewModel>() : AppCompatActivity() {
+    @LayoutRes
+    abstract fun getLayoutResId(): Int
+    abstract fun getViewModelClass(): Class<VM>
 
-    // ViewBinding 객체
-    private var _binding: VB? = null
-    protected val binding get() = _binding!!
+    protected lateinit var binding: VB
+    protected lateinit var viewModel: VM
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // ViewBinding 초기화 및 설정
-        val method = bindingClass.java.getMethod("inflate", android.view.LayoutInflater::class.java)
-        _binding = method.invoke(null, layoutInflater) as VB
-        setContentView(binding.root)
+        binding = DataBindingUtil.setContentView(this, getLayoutResId())
+        viewModel = ViewModelProvider(this).get(getViewModelClass()) // ViewModel 생성
 
         // 기본적인 초기화 함수 호출
         initialize()
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        _binding = null  // 메모리 누수 방지
     }
 
     /**

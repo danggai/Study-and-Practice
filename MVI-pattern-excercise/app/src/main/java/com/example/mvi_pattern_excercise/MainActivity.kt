@@ -1,12 +1,17 @@
 package com.example.mvi_pattern_excercise
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.mvi_pattern_excercise.core.BaseActivity
+import com.example.mvi_pattern_excercise.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>() {
+    override fun getLayoutResId(): Int = R.layout.activity_main
+    override fun getViewModelClass() = MainViewModel::class.java
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
