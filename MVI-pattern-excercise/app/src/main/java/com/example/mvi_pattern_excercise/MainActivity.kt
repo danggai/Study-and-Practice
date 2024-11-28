@@ -22,4 +22,12 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>() {
             insets
         }
     }
+
+    override fun initialize() {
+        binding.btn.setOnClickListener {
+            Toast.makeText(this, "Button Clicked!", Toast.LENGTH_SHORT).show()
+            viewModel
+        }
+    }
+
 }

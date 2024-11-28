@@ -24,7 +24,7 @@ class MainViewModel @Inject constructor() :
         }
     }
 
-    private fun generateRandomNumber()  {
+    private fun generateRandomNumber() {
         // TODO: do something
     }
 }
