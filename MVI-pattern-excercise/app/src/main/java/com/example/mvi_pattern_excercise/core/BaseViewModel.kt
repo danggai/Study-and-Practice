@@ -3,6 +3,7 @@ package com.example.mvi_pattern_excercise.core
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.channels.Channel
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asSharedFlow
@@ -56,9 +57,8 @@ abstract class BaseViewModel<Event : UiEvent, State : UiState, Effect : UiEffect
     // Start listening to Event
     private fun subscribeEvents() {
         viewModelScope.launch {
-            _event?.let {
-                it.collect { event -> handleEvent(event) }
-            }
+            while (_event == null) delay(10) // _event가 초기화될 때까지 대기
+            _event.collect { event -> handleEvent(event) }
         }
     }
 }
