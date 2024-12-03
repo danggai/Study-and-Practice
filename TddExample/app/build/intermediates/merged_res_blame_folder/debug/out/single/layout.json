@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\gitHub\\Kotlin-Android-Examples\\TddExample\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\main_activity.xml",
+        "source": "D:\\gitHub\\Kotlin-Android-Examples\\TddExample\\app\\src\\main\\res\\layout\\main_activity.xml"
+    },
+    {
+        "merged": "D:\\gitHub\\Kotlin-Android-Examples\\TddExample\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\main_fragment.xml",
+        "source": "D:\\gitHub\\Kotlin-Android-Examples\\TddExample\\app\\src\\main\\res\\layout\\main_fragment.xml"
+    }
+]
