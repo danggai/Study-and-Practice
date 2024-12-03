@@ -1,11 +1,29 @@
 ﻿# Kotlin-Android-Examples
-코틀린환경 안드로이드 개발 구현 예제
 
-인프런의 코틀린 기반 안드로이드 앱 개발 1~3단계를 보고 따라 만드는 예제들.
+## 2020
 
-내 입 맛대로 마음대로 수정해서 만들어짐!
+인프런의 코틀린 기반 안드로이드 앱 개발 강의를 기반으로 연습하는 예제입니다.
 
-# [코틀린 기반 안드로이드 앱 개발 1단계](https://edu.goorm.io/lecture/20669/2020-new-%EC%BD%94%ED%8B%80%EB%A6%B0-%EA%B8%B0%EB%B0%98-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C-part1-kotlin-ui-programming)
+기본적으로 강의의 예제를 따라하나, 추가로 그 때 그 때 적절히 추가 개발을 진행하였습니다.
+
+
+## 2021~
+
+주기적으로 트렌드, 직무에 필요한 기술에 대한 연습에 사용 된 코드를 보관합니다.
+
+특정 패턴, 새 라이브러리 등의 적용에 필요한 개인적인 공부에 사용 된 코드를 포함하고 있습니다.
+
+
+
+# 참고
+
+
+<details>
+<summary>코틀린 기반 안드로이드 앱 개발 1단계</summary>
+
+<!-- summary 아래 한칸 공백 두어야함 -->
+## [코틀린 기반 안드로이드 앱 개발 1단계](https://edu.goorm.io/lecture/20669/2020-new-%EC%BD%94%ED%8B%80%EB%A6%B0-%EA%B8%B0%EB%B0%98-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C-part1-kotlin-ui-programming)
+
 - 수강 기간: 2020-03-09 ~ 2020-03-16
 
 1. [ProgressBar](https://github.com/danggai/Kotlin-Android-Examples/tree/master/ProgeassBarExample)
@@ -38,9 +56,15 @@
 
 15. [Style Notification](https://github.com/danggai/Kotlin-Android-Examples/tree/master/StyleNotificationExample)
 
+</details>
 
 
-# [코틀린 기반 안드로이드 앱 개발 2단계](https://edu.goorm.io/lecture/23729/2020-new-%EC%BD%94%ED%8B%80%EB%A6%B0-%EA%B8%B0%EB%B0%98-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C-part2-%EB%A9%94%EB%89%B4%EC%99%80-4%EB%8C%80-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C)
+<details>
+<summary>코틀린 기반 안드로이드 앱 개발 2단계</summary>
+
+<!-- summary 아래 한칸 공백 두어야함 -->
+## [코틀린 기반 안드로이드 앱 개발 2단계](https://edu.goorm.io/lecture/23729/2020-new-%EC%BD%94%ED%8B%80%EB%A6%B0-%EA%B8%B0%EB%B0%98-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C-part2-%EB%A9%94%EB%89%B4%EC%99%80-4%EB%8C%80-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C)
+
 - 수강 기간: 2020-03-17 ~ 2020-08-23
 
 1. [Basic Permission](https://github.com/danggai/Kotlin-Android-Examples/tree/master/PermissionExample)
@@ -72,5 +96,4 @@
 14. [Dialog Fragment](https://github.com/danggai/Kotlin-Android-Examples/tree/master/DialogFragmentExample)
 
 15. [Localization](https://github.com/danggai/Kotlin-Android-Examples/tree/master/LocalizationExample)
-
-//
+</details>
