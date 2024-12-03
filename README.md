@@ -40,35 +40,21 @@
 
 - 수강 기간: 2020-03-09 ~ 2020-03-16
 
-1. [ProgressBar](https://github.com/danggai/Kotlin-Android-Examples/tree/master/ProgeassBarExample)
-
-2. [SeekBar](https://github.com/danggai/Kotlin-Android-Examples/tree/master/SeekBarExample)
-
-3. [ListView](https://github.com/danggai/Kotlin-Android-Examples/tree/master/TwoLineListViewExample)
-
-4. [RecyclerView](https://github.com/danggai/Kotlin-Android-Examples/tree/master/RecyclerViewExample2)
-
-5. [ViewPager](https://github.com/danggai/Kotlin-Android-Examples/tree/master/ViewPagerExample)
-
-6. [Custom Adapter](https://github.com/danggai/Kotlin-Android-Examples/tree/master/CustomAdapterExample)
-
-7. [Spinner](https://github.com/danggai/Kotlin-Android-Examples/tree/master/SpinnerExample)
-
-8. [Option Menu](https://github.com/danggai/Kotlin-Android-Examples/tree/master/OptionMenuExample)
-
-9. [Context Menu](https://github.com/danggai/Kotlin-Android-Examples/tree/master/ContextMenuExample)
-
-10. [Popup Menu](https://github.com/danggai/Kotlin-Android-Examples/tree/master/PopUpMenuExample)
-
-11. [ActionBar Menu](https://github.com/danggai/Kotlin-Android-Examples/tree/master/ActionBarExample)
-
-12. [CustomToast](https://github.com/danggai/Kotlin-Android-Examples/tree/master/CustomToastExample)
-
-13. [Dialog](https://github.com/danggai/Kotlin-Android-Examples/tree/master/BasicDialogExample)
-
-14. [Notification](https://github.com/danggai/Kotlin-Android-Examples/tree/master/NotificationExample)
-
-15. [Style Notification](https://github.com/danggai/Kotlin-Android-Examples/tree/master/StyleNotificationExample)
+1. [ProgressBar](2020/ProgeassBarExample/)
+2. [SeekBar](2020/SeekBarExample/)
+3. [ListView](2020/TwoLineListViewExample/)
+4. [RecyclerView](2020/RecyclerViewExample2/)
+5. [ViewPager](2020/ViewPagerExample/)
+6. [Custom Adapter](2020/CustomAdapterExample/)
+7. [Spinner](2020/SpinnerExample/)
+8. [Option Menu](2020/OptionMenuExample/)
+9. [Context Menu](2020/ContextMenuExample/)
+10. [Popup Menu](2020/PopUpMenuExample/)
+11. [ActionBar Menu](2020/ActionBarExample/)
+12. [CustomToast](2020/CustomToastExample/)
+13. [Dialog](2020/BasicDialogExample/)
+14. [Notification](2020/NotificationExample/)
+15. [Style Notification](2020/StyleNotificationExample/)
 
 </details>
 
@@ -81,33 +67,19 @@
 
 - 수강 기간: 2020-03-17 ~ 2020-08-23
 
-1. [Basic Permission](https://github.com/danggai/Kotlin-Android-Examples/tree/master/PermissionExample)
-
-2. [Basic Thread](https://github.com/danggai/Kotlin-Android-Examples/tree/master/ThreadExample)
-
-3. [Handler](https://github.com/danggai/Kotlin-Android-Examples/tree/master/HandlerExample)
-
-4. [Async Task](https://github.com/danggai/Kotlin-Android-Examples/tree/master/AsyncTaskExample)
-
-5. [Basic Activity](https://github.com/danggai/Kotlin-Android-Examples/tree/master/BasicActivityExample)
-
-6. [Intent to AnotherApp](https://github.com/danggai/Kotlin-Android-Examples/tree/master/AnotherAppIntentExample)
-
-7. [Broadcast Receiver](https://github.com/danggai/Kotlin-Android-Examples/tree/master/BroadCastReceiverExample1)
-
-8. [OS Broadcast Receiver](https://github.com/danggai/Kotlin-Android-Examples/tree/master/OSReceiverExample)
-
-9. [Service](https://github.com/danggai/Kotlin-Android-Examples/tree/master/ServiceExample)
-
-10. [IPC](https://github.com/danggai/Kotlin-Android-Examples/tree/master/IPCExample)
-
-11. [Basic Fragment](https://github.com/danggai/Kotlin-Android-Examples/tree/master/FragmentExample)
-
-12. [Activity Controller](https://github.com/danggai/Kotlin-Android-Examples/tree/master/ActivityControllerExample)
-
-13. [List Fragment](https://github.com/danggai/Kotlin-Android-Examples/tree/master/ListFragmentExample)
-
-14. [Dialog Fragment](https://github.com/danggai/Kotlin-Android-Examples/tree/master/DialogFragmentExample)
-
-15. [Localization](https://github.com/danggai/Kotlin-Android-Examples/tree/master/LocalizationExample)
+1. [Basic Permission](2020/PermissionExample/)
+2. [Basic Thread](2020/ThreadExample/)
+3. [Handler](2020/HandlerExample/)
+4. [Async Task](2020/AsyncTaskExample/)
+5. [Basic Activity](2020/BasicActivityExample/)
+6. [Intent to AnotherApp](2020/AnotherAppIntentExample/)
+7. [Broadcast Receiver](2020/BroadCastReceiverExample1/)
+8. [OS Broadcast Receiver](2020/OSReceiverExample/)
+9. [Service](2020/ServiceExample/)
+10. [IPC](2020/IPCExample/)
+11. [Basic Fragment](2020/FragmentExample/)
+12. [Activity Controller](2020/ActivityControllerExample/)
+13. [List Fragment](2020/ListFragmentExample/)
+14. [Dialog Fragment](2020/DialogFragmentExample/)
+15. [Localization](2020/LocalizationExample/)
 </details>
