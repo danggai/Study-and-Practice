@@ -1,17 +1,21 @@
 package com.example.mvi_pattern_excercise
 
-import android.widget.Toast
-import com.example.mvi_pattern_excercise.core.BaseActivity
-import com.example.mvi_pattern_excercise.databinding.ActivityMainBinding
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.activity.viewModels
+import com.example.mvi_pattern_excercise.ui.MainScreen
+import com.example.mvi_pattern_excercise.ui.theme.AppTheme
 
-class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>() {
-    override fun getLayoutResId(): Int = R.layout.activity_main
-    override fun getViewModelClass() = MainViewModel::class.java
+class MainActivity : ComponentActivity() {
+    private val viewModel: MainViewModel by viewModels()
 
-    override fun initialize() {
-        binding.btn.setOnClickListener {
-            Toast.makeText(this, "Button Clicked!", Toast.LENGTH_SHORT).show()
-            viewModel.setEvent(MainContract.Event.OnButtonClicked)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            AppTheme {
+                MainScreen(viewModel)
+            }
         }
     }
 }
