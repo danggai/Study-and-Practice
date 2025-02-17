@@ -7,15 +7,18 @@ import com.example.mvi_pattern_excercise.core.UiState
 class MainContract {
     // Events that user performed
     sealed class Event : UiEvent {
-        object OnButtonClicked : Event()
+        object GenerateNumber : Event()
+        data class GuessNumber(val number: String) : Event()
     }
 
     // Ui View States
     data class State(
         val isLoading: Boolean = false,
-        val randomNumber: Int = -1,
+        val randomNumber: Int? = null,
+
+        val password: String = "",
         val error: String? = null
-    ): UiState
+    ) : UiState
 
     // Side effects
     sealed class Effect : UiEffect {

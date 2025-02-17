@@ -18,13 +18,36 @@ class MainViewModel @Inject constructor() :
 
     override fun handleEvent(event: MainContract.Event) {
         when (event) {
-            MainContract.Event.OnButtonClicked -> {
+            is MainContract.Event.GenerateNumber -> {
                 generateRandomNumber()
+            }
+
+            is MainContract.Event.GuessNumber -> {
+                val guessedNumber = event.number
+
+                if (currentState.randomNumber == null) {
+                    setEffect { MainContract.Effect.ShowToast("먼저 번호를 생성하세요") }
+                    return
+                }
+
+                if (currentState.randomNumber.toString() == guessedNumber) {
+                    setEffect { MainContract.Effect.ShowToast("정답!") }
+                } else {
+                    setEffect { MainContract.Effect.ShowToast("땡") }
+                }
             }
         }
     }
 
     private fun generateRandomNumber() {
         setState { copy(randomNumber = Random.nextInt(1, 1001)) }
+    }
+
+    fun updatePassword(string: String) {
+        setState { copy(password = string) }
+    }
+
+    fun clearPassword(string: String) {
+        setState { copy(password = "") }
     }
 }

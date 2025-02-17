@@ -10,11 +10,11 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
@@ -33,17 +33,38 @@ fun MainScreen(viewModel: MainViewModel) {
     }
 
     Box(
-        modifier = Modifier.fillMaxSize().padding(16.dp),
-        contentAlignment = Alignment.Center
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp),
+        contentAlignment = Alignment.Center,
     ) {
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
             Text(text = "Hello World!", style = MaterialTheme.typography.titleLarge)
+            Text(text = "random Number = ${viewModel.currentState.randomNumber ?: "not exist"}")
+
             Spacer(modifier = Modifier.height(16.dp))
+
             Button(onClick = {
-                showToast = true
-                viewModel.setEvent(MainContract.Event.OnButtonClicked)
+                Toast.makeText(context, "Number Changed!", Toast.LENGTH_SHORT).show()
+                viewModel.setEvent(MainContract.Event.GenerateNumber)
             }) {
-                Text(text = "hello im button")
+                Text(text = "generate number")
+            }
+
+            val password = remember { mutableStateOf(viewModel.currentState.password) }
+
+            TextField(
+                value = password.value,
+                onValueChange = { newValue ->
+                    password.value = newValue
+                    viewModel.updatePassword(newValue)
+                }
+            )
+
+            Button(onClick = {
+                viewModel.setEvent(MainContract.Event.GuessNumber(viewModel.currentState.password))
+            }) {
+                Text(text = "submit")
             }
         }
     }
