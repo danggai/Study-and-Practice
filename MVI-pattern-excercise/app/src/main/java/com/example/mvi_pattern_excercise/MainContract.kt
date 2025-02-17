@@ -22,6 +22,6 @@ class MainContract {
 
     // Side effects
     sealed class Effect : UiEffect {
-        object ShowToast : Effect()
+        data class ShowToast(val message: String) : Effect()
     }
 }

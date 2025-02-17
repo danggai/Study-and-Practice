@@ -25,11 +25,17 @@ import com.example.mvi_pattern_excercise.MainViewModel
 
 @Composable
 fun MainScreen(viewModel: MainViewModel) {
-    var showToast by remember { mutableStateOf(false) }
+    val context = LocalContext.current
 
-    if (showToast) {
-        Toast.makeText(LocalContext.current, "Button Clicked!", Toast.LENGTH_SHORT).show()
-        showToast = false
+    // Effect 처리
+    LaunchedEffect(Unit) {
+        viewModel.effect.collect { effect ->
+            when (effect) {
+                is MainContract.Effect.ShowToast -> {
+                    Toast.makeText(context, effect.message, Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
     }
 
     Box(
