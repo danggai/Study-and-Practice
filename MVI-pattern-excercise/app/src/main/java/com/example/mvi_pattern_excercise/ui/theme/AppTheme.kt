@@ -5,24 +5,29 @@ import androidx.compose.material3.Typography
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
 // 🌞 라이트 모드 색상
 private val LightColors = lightColorScheme(
-    primary = androidx.compose.ui.graphics.Color(0xFF6200EE),
-    secondary = androidx.compose.ui.graphics.Color(0xFF03DAC5),
-    background = androidx.compose.ui.graphics.Color.White,
-    onPrimary = androidx.compose.ui.graphics.Color.White
+    primary = Color(0xFF6200EE),
+    secondary = Color(0xFF03DAC5),
+    background = Color.White,
+    onPrimary = Color.White,
+    onBackground = Color.Black,
+    onSurface = Color.Black,
 )
 
 // 🌙 다크 모드 색상
 private val DarkColors = darkColorScheme(
-    primary = androidx.compose.ui.graphics.Color(0xFFBB86FC),
-    secondary = androidx.compose.ui.graphics.Color(0xFF03DAC5),
-    background = androidx.compose.ui.graphics.Color.Black,
-    onPrimary = androidx.compose.ui.graphics.Color.Black
+    primary = Color(0xFFBB86FC),
+    secondary = Color(0xFF03DAC5),
+    background = Color.DarkGray,
+    onPrimary = Color.Black,
+    onBackground = Color.White,
+    onSurface = Color.White,
 )
 
 private val Typography = Typography(

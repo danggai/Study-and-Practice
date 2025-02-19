@@ -1,18 +1,19 @@
 package com.example.mvi_pattern_excercise.ui
 
 import android.widget.Toast
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
@@ -25,6 +26,7 @@ import com.example.mvi_pattern_excercise.MainViewModel
 
 @Composable
 fun MainScreen(viewModel: MainViewModel) {
+    val state = viewModel.uiState.collectAsState()  // 상태 구독
     val context = LocalContext.current
 
     // Effect 처리
@@ -41,14 +43,22 @@ fun MainScreen(viewModel: MainViewModel) {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .padding(16.dp),
+            .background(MaterialTheme.colorScheme.background),
         contentAlignment = Alignment.Center,
     ) {
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
-            Text(text = "Hello World!", style = MaterialTheme.typography.titleLarge)
-            Text(text = "random Number = ${viewModel.currentState.randomNumber ?: "not exist"}")
+            Text(
+                text = "Hello World!",
+                style = MaterialTheme.typography.titleLarge,
+                color = MaterialTheme.colorScheme.onBackground
+            )
+            Text(
+                text = "random Number = ${state.value.randomNumber ?: "not exist"}",
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onBackground
+            )
 
-            Spacer(modifier = Modifier.height(16.dp))
+            Spacer(modifier = Modifier.height(8.dp))
 
             Button(onClick = {
                 Toast.makeText(context, "Number Changed!", Toast.LENGTH_SHORT).show()
@@ -57,8 +67,9 @@ fun MainScreen(viewModel: MainViewModel) {
                 Text(text = "generate number")
             }
 
-            val password = remember { mutableStateOf(viewModel.currentState.password) }
+            Spacer(modifier = Modifier.height(16.dp))
 
+            val password = remember { mutableStateOf(state.value.password) }
             TextField(
                 value = password.value,
                 onValueChange = { newValue ->
@@ -67,11 +78,15 @@ fun MainScreen(viewModel: MainViewModel) {
                 }
             )
 
+            Spacer(modifier = Modifier.height(8.dp))
+
             Button(onClick = {
-                viewModel.setEvent(MainContract.Event.GuessNumber(viewModel.currentState.password))
+                viewModel.setEvent(MainContract.Event.GuessNumber(state.value.password))
             }) {
                 Text(text = "submit")
             }
         }
     }
 }
+
+// 내일은 이거 오르빗으로 해보기
