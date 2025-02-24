@@ -1,5 +1,6 @@
 package com.example.mvi_pattern_excercise.ui
 
+import android.content.Intent
 import android.widget.Toast
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -22,6 +23,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.example.mvi_pattern_excercise.MainContract
 import com.example.mvi_pattern_excercise.MainViewModel
+import com.example.mvi_pattern_excercise.SubActivity
 
 
 @Composable
@@ -35,6 +37,10 @@ fun MainScreen(viewModel: MainViewModel) {
             when (effect) {
                 is MainContract.Effect.ShowToast -> {
                     Toast.makeText(context, effect.message, Toast.LENGTH_SHORT).show()
+                }
+
+                is MainContract.Effect.StartSubActivity -> {
+                    context.startActivity(Intent(context, SubActivity::class.java))
                 }
             }
         }

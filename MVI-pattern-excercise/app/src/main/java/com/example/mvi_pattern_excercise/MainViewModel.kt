@@ -32,6 +32,7 @@ class MainViewModel @Inject constructor() :
 
                 if (currentState.randomNumber.toString() == guessedNumber) {
                     setEffect { MainContract.Effect.ShowToast("정답!") }
+                    setEffect { MainContract.Effect.StartSubActivity }
                 } else {
                     setEffect { MainContract.Effect.ShowToast("땡") }
                 }
