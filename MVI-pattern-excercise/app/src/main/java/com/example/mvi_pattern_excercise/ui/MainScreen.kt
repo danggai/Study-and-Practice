@@ -23,7 +23,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.example.mvi_pattern_excercise.MainContract
 import com.example.mvi_pattern_excercise.MainViewModel
-import com.example.mvi_pattern_excercise.SubActivity
+import com.example.mvi_pattern_excercise.SubFirstActivity
 
 
 @Composable
@@ -40,7 +40,7 @@ fun MainScreen(viewModel: MainViewModel) {
                 }
 
                 is MainContract.Effect.StartSubActivity -> {
-                    context.startActivity(Intent(context, SubActivity::class.java))
+                    context.startActivity(Intent(context, SubFirstActivity::class.java))
                 }
             }
         }

@@ -7,8 +7,8 @@ import androidx.activity.viewModels
 import com.example.mvi_pattern_excercise.ui.SubScreen
 import com.example.mvi_pattern_excercise.ui.theme.AppTheme
 
-class SubActivity : ComponentActivity() {
-    private val viewModel: SubViewModel by viewModels()
+class SubFirstActivity : ComponentActivity() {
+    private val viewModel: SubFirstViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

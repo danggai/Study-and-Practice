@@ -4,11 +4,10 @@ import com.example.mvi_pattern_excercise.core.UiEffect
 import com.example.mvi_pattern_excercise.core.UiEvent
 import com.example.mvi_pattern_excercise.core.UiState
 
-class SubContract {
+class SubFirstContract {
     // Events that user performed
     sealed class Event : UiEvent {
-        object GenerateNumber : Event()
-        data class GuessNumber(val number: String) : Event()
+//        object GenerateNumber : Event()
     }
 
     // Ui View States
@@ -18,6 +17,6 @@ class SubContract {
 
     // Side effects
     sealed class Effect : UiEffect {
-        data class ShowToast(val message: String) : Effect()
+//        data class ShowToast(val message: String) : Effect()
     }
 }
