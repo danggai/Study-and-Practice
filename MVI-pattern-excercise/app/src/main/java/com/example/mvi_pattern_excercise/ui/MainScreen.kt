@@ -13,8 +13,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
@@ -24,24 +22,23 @@ import androidx.compose.ui.unit.dp
 import com.example.mvi_pattern_excercise.MainContract
 import com.example.mvi_pattern_excercise.MainViewModel
 import com.example.mvi_pattern_excercise.SubFirstActivity
+import org.orbitmvi.orbit.compose.collectAsState
+import org.orbitmvi.orbit.compose.collectSideEffect
 
 
 @Composable
 fun MainScreen(viewModel: MainViewModel) {
-    val state = viewModel.uiState.collectAsState()  // 상태 구독
+    val state = viewModel.collectAsState()  // 상태 구독
     val context = LocalContext.current
 
-    // Effect 처리
-    LaunchedEffect(Unit) {
-        viewModel.effect.collect { effect ->
-            when (effect) {
-                is MainContract.Effect.ShowToast -> {
-                    Toast.makeText(context, effect.message, Toast.LENGTH_SHORT).show()
-                }
+    viewModel.collectSideEffect { effect ->
+        when (effect) {
+            is MainContract.Effect.ShowToast -> {
+                Toast.makeText(context, effect.message, Toast.LENGTH_SHORT).show()
+            }
 
-                is MainContract.Effect.StartSubActivity -> {
-                    context.startActivity(Intent(context, SubFirstActivity::class.java))
-                }
+            is MainContract.Effect.StartSubActivity -> {
+                context.startActivity(Intent(context, SubFirstActivity::class.java))
             }
         }
     }
@@ -68,7 +65,7 @@ fun MainScreen(viewModel: MainViewModel) {
 
             Button(onClick = {
                 Toast.makeText(context, "Number Changed!", Toast.LENGTH_SHORT).show()
-                viewModel.setEvent(MainContract.Event.GenerateNumber)
+                viewModel.onEvent(MainContract.Event.GenerateNumber)
             }) {
                 Text(text = "generate number")
             }
@@ -87,7 +84,7 @@ fun MainScreen(viewModel: MainViewModel) {
             Spacer(modifier = Modifier.height(8.dp))
 
             Button(onClick = {
-                viewModel.setEvent(MainContract.Event.GuessNumber(state.value.password))
+                viewModel.onEvent(MainContract.Event.GuessNumber(state.value.password))
             }) {
                 Text(text = "submit")
             }

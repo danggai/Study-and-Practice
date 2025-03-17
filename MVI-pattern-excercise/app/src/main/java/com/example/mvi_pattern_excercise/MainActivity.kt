@@ -4,19 +4,17 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
-import com.example.mvi_pattern_excercise.ui.MainOrbitScreen
+import com.example.mvi_pattern_excercise.ui.MainScreen
 import com.example.mvi_pattern_excercise.ui.theme.AppTheme
 
 class MainActivity : ComponentActivity() {
-    //    private val viewModel: MainViewModel by viewModels()
-    private val orbitViewModel: MainOrbitViewModel by viewModels()
+    private val viewModel: MainViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             AppTheme(darkTheme = true) {
-//                MainScreen(viewModel)
-                MainOrbitScreen(orbitViewModel)
+                MainScreen(viewModel)
             }
         }
     }
