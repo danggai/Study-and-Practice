@@ -66,6 +66,10 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.lifecycle.runtime.compose)
 
+    implementation(libs.orbit.core)
+    implementation(libs.orbit.viewmodel)
+    implementation(libs.orbit.compose)
+
     ksp(libs.hilt.compiler)
     implementation(libs.kotlinx.coroutines)
     testImplementation(libs.junit)
